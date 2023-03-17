@@ -19,4 +19,19 @@ public class SermonService {
     public List<Sermon> getAll() {
         return repository.findAll();
     }
+
+    @Transactional
+    public List<Sermon> searchBySpeaker(String speaker) {
+        return repository.findBySpeaker(speaker);
+    }
+
+    @Transactional
+    public List<Sermon> searchBySpeakers(List<String> speakers) {
+        return repository.findBySpeakers(speakers);
+    }
+
+    @Transactional
+    public List<String> searchAllSpeakers(String name) {
+        return repository.findAllSpeakers(name);
+    }
 }
