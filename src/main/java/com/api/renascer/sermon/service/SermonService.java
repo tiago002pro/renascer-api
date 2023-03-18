@@ -32,6 +32,6 @@ public class SermonService {
 
     @Transactional
     public List<String> searchAllSpeakers(String name) {
-        return repository.findAllSpeakers(name);
+        return repository.searchAllSpeakers(name);
     }
 }

@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +144,12 @@
       <workItem from="1678847766962" duration="2156000" />
       <workItem from="1678935708139" duration="674000" />
       <workItem from="1679018157247" duration="3197000" />
+      <workItem from="1679053632954" duration="1019000" />
+      <workItem from="1679055558107" duration="54000" />
+      <workItem from="1679055638825" duration="417000" />
+      <workItem from="1679056838411" duration="863000" />
+      <workItem from="1679066818423" duration="1592000" />
+      <workItem from="1679085946497" duration="836000" />
     </task>
     <servers />
   </component>

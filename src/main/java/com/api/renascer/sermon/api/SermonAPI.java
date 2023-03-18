@@ -28,13 +28,13 @@ public class SermonAPI {
     }
 
     @CrossOrigin
-    @GetMapping("/by-speakers")
+    @PostMapping("/by-speakers")
     public ResponseEntity searchBySpeakers(@RequestBody List<String> speakers) {
         return ResponseEntity.ok((service).searchBySpeakers(speakers));
     }
 
     @CrossOrigin
-    @GetMapping("/speakers")
+    @GetMapping("/speakers-by-name")
     public ResponseEntity searchAllSpeakers(@RequestParam("name") String name) {
         return ResponseEntity.ok((service).searchAllSpeakers(name));
     }
