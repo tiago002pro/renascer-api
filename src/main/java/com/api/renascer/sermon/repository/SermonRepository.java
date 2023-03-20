@@ -20,5 +20,5 @@ public interface SermonRepository extends JpaRepository<Sermon, Long> {
 
     @Query(nativeQuery = true,
             value = "SELECT s.speaker FROM sermon s WHERE lower(s.speaker) LIKE concat('%', lower(:name), '%') GROUP BY s.speaker ")
-    List<String> findAllSpeakers(@Param("name") String name);
+    List<String> searchAllSpeakers(@Param("name") String name);
 }
