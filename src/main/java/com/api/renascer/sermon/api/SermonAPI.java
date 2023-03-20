@@ -16,6 +16,12 @@ public class SermonAPI {
     }
 
     @CrossOrigin
+    @GetMapping("/{id}")
+    public ResponseEntity getAll(@PathVariable Long id) {
+        return ResponseEntity.ok((service).getById(id));
+    }
+
+    @CrossOrigin
     @GetMapping("/all")
     public ResponseEntity getAll() {
         return ResponseEntity.ok((service).getAll());
@@ -28,14 +34,14 @@ public class SermonAPI {
     }
 
     @CrossOrigin
-    @GetMapping("/by-speakers")
+    @PostMapping("/by-speakers")
     public ResponseEntity searchBySpeakers(@RequestBody List<String> speakers) {
         return ResponseEntity.ok((service).searchBySpeakers(speakers));
     }
 
     @CrossOrigin
     @GetMapping("/speakers")
-    public ResponseEntity searchAllSpeakers(@RequestParam("name") String name) {
-        return ResponseEntity.ok((service).searchAllSpeakers(name));
+    public ResponseEntity searchSpeakers(@RequestParam("name") String name) {
+        return ResponseEntity.ok((service).searchSpeakers(name));
     }
 }

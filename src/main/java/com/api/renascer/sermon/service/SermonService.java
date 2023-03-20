@@ -16,6 +16,11 @@ public class SermonService {
     }
 
     @Transactional
+    public Sermon getById(Long id) {
+        return repository.findById(id).get();
+    }
+
+    @Transactional
     public List<Sermon> getAll() {
         return repository.findAll();
     }
@@ -31,7 +36,7 @@ public class SermonService {
     }
 
     @Transactional
-    public List<String> searchAllSpeakers(String name) {
+    public List<String> searchSpeakers(String name) {
         return repository.findAllSpeakers(name);
     }
 }
