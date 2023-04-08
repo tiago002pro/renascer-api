@@ -44,4 +44,10 @@ public class SermonAPI {
     public ResponseEntity searchSpeakers(@RequestParam("name") String name) {
         return ResponseEntity.ok((service).searchSpeakers(name));
     }
+
+    @CrossOrigin
+    @GetMapping("/most-recents")
+    public ResponseEntity getMostRecent(@RequestParam("limit") Integer limit) {
+        return ResponseEntity.ok((service).getMostRecent(limit));
+    }
 }

@@ -37,6 +37,11 @@ public class SermonService {
 
     @Transactional
     public List<String> searchSpeakers(String name) {
-        return repository.findAllSpeakers(name);
+        return repository.searchAllSpeakers(name);
+    }
+
+    @Transactional
+    public List<Sermon> getMostRecent(Integer limit) {
+        return repository.findMostRecent(limit);
     }
 }

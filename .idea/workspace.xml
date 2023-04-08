@@ -6,11 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +51,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2Mmh10ifvpT1Hdx319aI8JoDv8F" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,6 +85,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\Repositórios\renascer-api\src\main\resources\" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.renascer">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -142,13 +156,16 @@
       <workItem from="1678753664130" duration="1860000" />
       <workItem from="1678847766962" duration="2156000" />
       <workItem from="1678935708139" duration="674000" />
-      <workItem from="1679018157247" duration="3197000" />
-      <workItem from="1679053632954" duration="1019000" />
-      <workItem from="1679055558107" duration="54000" />
-      <workItem from="1679055638825" duration="417000" />
-      <workItem from="1679056838411" duration="863000" />
-      <workItem from="1679066818423" duration="1592000" />
-      <workItem from="1679085946497" duration="836000" />
+      <workItem from="1679018157247" duration="4092000" />
+      <workItem from="1679103834234" duration="2790000" />
+      <workItem from="1679191885986" duration="1805000" />
+      <workItem from="1679308454527" duration="192000" />
+      <workItem from="1679754110783" duration="3082000" />
+      <workItem from="1680434151103" duration="1253000" />
+      <workItem from="1680571727761" duration="751000" />
+      <workItem from="1680655462874" duration="1534000" />
+      <workItem from="1680745971537" duration="454000" />
+      <workItem from="1680876413424" duration="2261000" />
     </task>
     <servers />
   </component>
@@ -164,14 +181,24 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailAPI.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailService.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="9" />
+          <line>50</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
