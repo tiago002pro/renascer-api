@@ -16,13 +16,28 @@ public class SermonService {
     }
 
     @Transactional
-    public Sermon getById(Long id) {
-        return repository.findById(id).get();
+    public Sermon create(Sermon sermon) {
+        return repository.save(sermon);
+    }
+
+    @Transactional
+    public Sermon update(Sermon sermon) {
+        return repository.save(sermon);
+    }
+
+    @Transactional
+    public void delete(Long id) {
+        repository.deleteById(id);
     }
 
     @Transactional
     public List<Sermon> getAll() {
         return repository.findAll();
+    }
+
+    @Transactional
+    public Sermon getById(Long id) {
+        return repository.findById(id).get();
     }
 
     @Transactional
