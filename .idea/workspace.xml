@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/UserAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +163,15 @@
       <workItem from="1680655462874" duration="1534000" />
       <workItem from="1680745971537" duration="454000" />
       <workItem from="1680876413424" duration="2261000" />
+      <workItem from="1680981973535" duration="1459000" />
+      <workItem from="1681060013474" duration="676000" />
+      <workItem from="1681093377977" duration="1426000" />
+      <workItem from="1681351689870" duration="624000" />
+      <workItem from="1681436710672" duration="1608000" />
+      <workItem from="1681560185591" duration="783000" />
+      <workItem from="1681956871371" duration="656000" />
+      <workItem from="1682075671554" duration="645000" />
+      <workItem from="1696473767062" duration="2658000" />
     </task>
     <servers />
   </component>
@@ -175,11 +181,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailAPI.java</url>
           <line>18</line>
@@ -196,9 +197,19 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/UserAPI.java</url>
+          <line>25</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/UserAPI.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/UserService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
