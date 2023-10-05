@@ -1,4 +1,4 @@
-package com.api.renascer.user;
+package com.api.renascer.person;
 
 import jakarta.persistence.*;
 import lombok.Data;

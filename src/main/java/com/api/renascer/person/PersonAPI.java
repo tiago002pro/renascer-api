@@ -1,4 +1,4 @@
-package com.api.renascer.user;
+package com.api.renascer.person;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

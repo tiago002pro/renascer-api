@@ -1,4 +1,4 @@
-package com.api.renascer.user;
+package com.api.renascer.person;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
