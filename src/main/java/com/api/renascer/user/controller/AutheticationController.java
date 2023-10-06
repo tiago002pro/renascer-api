@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("auth")
+@RequestMapping("/auth")
 public class AutheticationController {
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -42,10 +42,8 @@ public class AutheticationController {
         if (this.repository.findByLogin(data.login()) != null) return ResponseEntity.badRequest().build();
 
         String encryptedPassword = new BCryptPasswordEncoder().encode(data.password());
-        User newUser = new User(data.login(), encryptedPassword, data.role());
+        User newUser = new User(data.name(), data.login(), encryptedPassword, data.role());
 
-        this.repository.save(newUser);
-
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(this.repository.save(newUser));
     }
 }

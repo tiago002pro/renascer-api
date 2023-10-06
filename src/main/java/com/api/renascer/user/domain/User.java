@@ -20,6 +20,8 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "name")
+    private String name;
     @Column(name = "login")
     private String login;
     @Column(name = "password")
@@ -27,7 +29,8 @@ public class User implements UserDetails {
     @Column(name = "role")
     private UserRole role;
 
-    public User(String login, String password, UserRole role) {
+    public User(String name, String login, String password, UserRole role) {
+        this.name = name;
         this.login = login;
         this.password = password;
         this.role = role;
