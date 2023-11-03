@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.util.Date;
 import java.util.UUID;
@@ -23,9 +24,9 @@ public class TokenService {
         try {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             String token = JWT.create()
-                    .withIssuer("Api Renascer")
-                    .withSubject(user.getUsername())
-                    .withClaim("id", user.getId().toString())
+                    .withSubject(user.getId().toString())
+                    .withClaim("name", user.getName())
+                    .withClaim("email", user.getUsername())
                     .withExpiresAt(generateExpirationDate())
                     .sign(algorithm);
             return token;
