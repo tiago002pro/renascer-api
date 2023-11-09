@@ -24,6 +24,7 @@ public class TokenService {
         try {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             String token = JWT.create()
+                    .withIssuer("api-renascer")
                     .withSubject(user.getId().toString())
                     .withClaim("name", user.getName())
                     .withClaim("email", user.getUsername())
@@ -39,7 +40,7 @@ public class TokenService {
         try {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             return JWT.require(algorithm)
-                    .withIssuer("Api Renascer")
+                    .withIssuer("api-renascer")
                     .build()
                     .verify(token)
                     .getSubject();

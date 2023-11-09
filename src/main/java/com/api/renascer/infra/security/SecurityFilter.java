@@ -1,5 +1,6 @@
 package com.api.renascer.infra.security;
 
+import com.api.renascer.user.domain.User;
 import com.api.renascer.user.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Optional;
 
 @Component
 public class SecurityFilter extends OncePerRequestFilter {
@@ -25,8 +27,9 @@ public class SecurityFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         var token = this.recoverToken(request);
         if (token != null) {
-            var login = tokenService.validadeToken(token);
-            UserDetails user = userRepository.findByLogin(login);
+            var id = tokenService.validadeToken(token);
+            Optional<User> userOptional = userRepository.findById(Long.parseLong(id));
+            UserDetails user = userOptional.orElse(null);
 
             var authentication = new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
             SecurityContextHolder.getContext().setAuthentication(authentication);
