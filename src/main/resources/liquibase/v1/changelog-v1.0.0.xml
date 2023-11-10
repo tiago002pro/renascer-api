@@ -24,17 +24,19 @@
     <changeSet id="2" author="tiagobarbosa02@outlook.com">
         <preConditions>
             <not>
-                <tableExists tableName="person"/>
+                <tableExists tableName="sermon"/>
             </not>
         </preConditions>
-        <createTable tableName="person">
+        <createTable tableName="sermon">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="VARCHAR(255)"/>
-            <column name="date_birth" type="DATE"/>
-            <column name="email" type="VARCHAR(255)"/>
-            <column name="password" type="VARCHAR(255)"/>
+            <column name="url" type="VARCHAR(255)"/>
+            <column name="img" type="VARCHAR(255)"/>
+            <column name="title" type="VARCHAR(255)"/>
+            <column name="speaker" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="date" type="DATE"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>
