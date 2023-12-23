@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/api/ScheduleAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/model/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/repository/ScheduleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/service/ScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/api/VideoAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/model/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/repository/VideoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/xml/network_security_config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityConfigurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityConfigurations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/TokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +28,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -181,6 +189,23 @@
       <workItem from="1698898933476" duration="3326000" />
       <workItem from="1698968872656" duration="2683000" />
       <workItem from="1699546197779" duration="2017000" />
+      <workItem from="1700092817648" duration="3324000" />
+      <workItem from="1700181992653" duration="1799000" />
+      <workItem from="1700401409854" duration="2753000" />
+      <workItem from="1700527868719" duration="1335000" />
+      <workItem from="1700883485919" duration="746000" />
+      <workItem from="1701135236217" duration="1684000" />
+      <workItem from="1701214221705" duration="1335000" />
+      <workItem from="1701518956087" duration="975000" />
+      <workItem from="1701572105186" duration="3245000" />
+      <workItem from="1701747245960" duration="488000" />
+      <workItem from="1702001191502" duration="1299000" />
+      <workItem from="1702134127291" duration="665000" />
+      <workItem from="1702551687214" duration="576000" />
+      <workItem from="1702944771228" duration="2189000" />
+      <workItem from="1703033252012" duration="4798000" />
+      <workItem from="1703125401180" duration="3898000" />
+      <workItem from="1703208979874" duration="1957000" />
     </task>
     <servers />
   </component>
@@ -236,21 +261,6 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/6.0.2/spring-security-web-6.0.2.jar!/org/springframework/security/web/ObservationFilterChainDecorator.class</url>
           <line>92</line>
           <option name="timeStamp" value="33" />
@@ -266,9 +276,24 @@
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
           <line>33</line>
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/video/api/VideoAPI.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
