@@ -52,9 +52,13 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="title" type="VARCHAR(255)"/>
+            <column name="start_date" type="TIMESTAMP"/>
+            <column name="end_date" type="TIMESTAMP"/>
+            <column name="address" type="VARCHAR(255)"/>
             <column name="description" type="TEXT"/>
-            <column name="date" type="TIMESTAMP"/>
             <column name="image" type="VARCHAR(255)"/>
+            <column name="registration" type="BOOLEAN"/>
+            <column name="deadline" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>

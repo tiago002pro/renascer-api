@@ -21,4 +21,9 @@ public class ScheduleService {
     public List<Schedule> getAll() {
         return repository.findAll();
     }
+
+    @Transactional
+    public List<Schedule> getAllByValidDeadline() {
+        return repository.findAllByValidDeadline();
+    }
 }

@@ -14,10 +14,18 @@ public class Schedule {
     private Long id;
     @Column(name = "title")
     private String title;
+    @Column(name = "start_date")
+    private Date startDate;
+    @Column(name = "end_date")
+    private Date endDate;
+    @Column(name = "address")
+    private String address;
     @Column(name = "description")
     private String description;
-    @Column(name = "date")
-    private Date date;
     @Column(name = "image")
     private String image;
+    @Column(name = "registration")
+    private Boolean registration;
+    @Column(name = "deadline")
+    private Date deadline;
 }
