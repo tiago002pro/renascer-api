@@ -1,6 +1,7 @@
 package com.api.renascer.user.controller;
 
 import com.api.renascer.infra.security.TokenService;
+import com.api.renascer.person.model.Person;
 import com.api.renascer.schedule.service.ScheduleService;
 import com.api.renascer.user.LoginResponseDTO;
 import com.api.renascer.user.domain.AuthenticationDTO;
@@ -50,10 +51,11 @@ public class AutheticationController {
 
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody @Validated RegisterDTO data) {
-            if (this.repository.findByLogin(data.login()) != null) return ResponseEntity.badRequest().build();
+        if (this.repository.findByLogin(data.login()) != null) return ResponseEntity.badRequest().build();
 
         String encryptedPassword = new BCryptPasswordEncoder().encode(data.password());
-        User newUser = new User(data.name(), data.login(), encryptedPassword, data.phone(), data.role());
+        Person person = new Person(data.name(), data.login());
+        User newUser = new User(data.name(), data.login(), encryptedPassword, data.role(), person);
 
         return ResponseEntity.ok(this.repository.save(newUser));
     }

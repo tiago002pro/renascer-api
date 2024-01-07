@@ -1,5 +1,7 @@
-package com.api.renascer.person;
+package com.api.renascer.person.service;
 
+import com.api.renascer.person.model.Person;
+import com.api.renascer.person.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,10 +20,5 @@ public class PersonService {
     @Transactional
     public Person save(Person person) {
         return this.repository.save(person);
-    }
-
-    @Transactional(readOnly = true)
-    public List<Person> getAll() {
-        return this.repository.findAll();
     }
 }

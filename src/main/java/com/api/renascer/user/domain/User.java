@@ -1,5 +1,6 @@
 package com.api.renascer.user.domain;
 
+import com.api.renascer.person.model.Person;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,17 +27,18 @@ public class User implements UserDetails {
     private String login;
     @Column(name = "password")
     private String password;
-    @Column(name = "phone")
-    private String phone;
     @Column(name = "role")
     private UserRole role;
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "person_id")
+    private Person person;
 
-    public User(String name, String login, String password, String phone, UserRole role) {
+    public User(String name, String login, String password, UserRole role, Person person) {
         this.name = name;
         this.login = login;
         this.password = password;
-        this.phone = phone;
         this.role = role;
+        this.person = person;
     }
 
     @Override

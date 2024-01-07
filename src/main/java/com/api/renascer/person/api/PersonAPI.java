@@ -1,5 +1,7 @@
-package com.api.renascer.person;
+package com.api.renascer.person.api;
 
+import com.api.renascer.person.service.PersonService;
+import com.api.renascer.person.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,15 +16,9 @@ public class PersonAPI {
         this.service = service;
     }
 
-    @CrossOrigin
-    @PostMapping("/save")
-    public ResponseEntity save(@RequestBody Person person) {
+    @PutMapping("/update/{id}")
+    public ResponseEntity update(@RequestBody Person person,
+                                 @PathVariable Long id) {
         return ResponseEntity.ok((service).save(person));
-    }
-
-    @CrossOrigin
-    @GetMapping("/all")
-    public ResponseEntity getAll() {
-        return ResponseEntity.ok((service).getAll());
     }
 }
