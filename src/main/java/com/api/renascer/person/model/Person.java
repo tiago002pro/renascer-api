@@ -32,6 +32,8 @@ public class Person {
     private String cellPhone;
     @Column(name = "phone")
     private String phone;
+    @Column(name = "profile_image")
+    private String profileImage;
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "address_id")
     private Address address;

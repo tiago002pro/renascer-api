@@ -38,6 +38,7 @@
             <column name="marital_status" type="VARCHAR(50)"/>
             <column name="cell_phone" type="VARCHAR(20)"/>
             <column name="phone" type="VARCHAR(20)"/>
+            <column name="profile_image" type="VARCHAR(255)"/>
             <column name="address_id" type="BIGINT"/>
         </createTable>
     </changeSet>
@@ -110,6 +111,16 @@
     </changeSet>
 
     <changeSet id="7" author="tiagobarbosa02@outlook.com">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="f">
+                SELECT count(*) > 0 FROM video v
+            </sqlCheck>
+        </preConditions>
+        <comment>Inserindo os videos.</comment>
+        <sqlFile path="/liquibase/v1/scripts/videos.sql" />
+    </changeSet>
+
+    <changeSet id="8" author="tiagobarbosa02@outlook.com">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="schedule"/>
