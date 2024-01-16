@@ -6,18 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/repository/ScheduleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/repository/ScheduleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/service/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/service/ScheduleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityConfigurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityConfigurations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/model/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/model/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/repository/ScheduleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/repository/ScheduleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/service/ScheduleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/service/ScheduleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renascer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renascer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/PersonAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/PersonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/PersonService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/controller/AutheticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/user/controller/AutheticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +210,9 @@
       <workItem from="1703527189140" duration="6954000" />
       <workItem from="1703557434156" duration="1442000" />
       <workItem from="1703607247662" duration="768000" />
+      <workItem from="1704768093149" duration="2258000" />
+      <workItem from="1705028834327" duration="1061000" />
+      <workItem from="1705197246900" duration="800000" />
     </task>
     <servers />
   </component>

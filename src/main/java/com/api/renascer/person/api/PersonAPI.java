@@ -1,7 +1,7 @@
 package com.api.renascer.person.api;
 
-import com.api.renascer.person.service.PersonService;
 import com.api.renascer.person.model.Person;
+import com.api.renascer.person.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
