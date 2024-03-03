@@ -13,4 +13,8 @@ public interface VideoRepository extends JpaRepository<Video, Long> {
     @Query(nativeQuery = true,
         value = "SELECT * FROM video v WHERE v.category = :category")
     List<Video> findAllByCategory(@Param("category") String category);
+
+    @Query(nativeQuery = true,
+            value = "SELECT * FROM video v ORDER BY v.date DESC LIMIT 10")
+    List<Video> findLatest();
 }

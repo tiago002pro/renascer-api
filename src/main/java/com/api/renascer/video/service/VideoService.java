@@ -26,4 +26,9 @@ public class VideoService {
     public List<Video> getAllByCategory(String category) {
         return repository.findAllByCategory(category);
     }
+
+    @Transactional
+    public List<Video> getLatest() {
+        return repository.findLatest();
+    }
 }

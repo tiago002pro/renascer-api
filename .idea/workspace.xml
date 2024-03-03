@@ -6,17 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renascer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renascer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/PersonAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/PersonRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/controller/AutheticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/user/controller/AutheticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/api/VideoAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/api/VideoAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/repository/VideoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/repository/VideoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/renascer-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/renascer-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,6 +211,35 @@
       <workItem from="1704768093149" duration="2258000" />
       <workItem from="1705028834327" duration="1061000" />
       <workItem from="1705197246900" duration="800000" />
+      <workItem from="1705367063742" duration="2607000" />
+      <workItem from="1705448502684" duration="681000" />
+      <workItem from="1705544058160" duration="1008000" />
+      <workItem from="1705626582004" duration="682000" />
+      <workItem from="1705763921453" duration="1122000" />
+      <workItem from="1705972036132" duration="910000" />
+      <workItem from="1706360470580" duration="629000" />
+      <workItem from="1706419234371" duration="1387000" />
+      <workItem from="1706579834036" duration="813000" />
+      <workItem from="1706668058232" duration="2090000" />
+      <workItem from="1706754627011" duration="773000" />
+      <workItem from="1706833790080" duration="2519000" />
+      <workItem from="1706925007125" duration="1740000" />
+      <workItem from="1707058710120" duration="1605000" />
+      <workItem from="1707178449759" duration="1683000" />
+      <workItem from="1707732425173" duration="674000" />
+      <workItem from="1707834662281" duration="5489000" />
+      <workItem from="1708046171789" duration="1882000" />
+      <workItem from="1708136660309" duration="1082000" />
+      <workItem from="1708255464958" duration="1659000" />
+      <workItem from="1708327771289" duration="1557000" />
+      <workItem from="1708648938032" duration="1754000" />
+      <workItem from="1708863620581" duration="2929000" />
+      <workItem from="1708910724620" duration="3755000" />
+      <workItem from="1708996604339" duration="1342000" />
+      <workItem from="1709255698074" duration="2938000" />
+      <workItem from="1709347443840" duration="719000" />
+      <workItem from="1709380176488" duration="3254000" />
+      <workItem from="1709436572865" duration="3062000" />
     </task>
     <servers />
   </component>
@@ -288,39 +315,29 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/video/api/VideoAPI.java</url>
           <line>20</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityFilter.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="52" />
+          <line>64</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="53" />
+          <line>69</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="54" />
+          <line>74</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -18,8 +18,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/auth")
-public class AutheticationController {
+    @RequestMapping("/auth")
+    public class AutheticationController {
     private final AuthenticationManager authenticationManager;
     private final UserRepository repository;
     private final TokenService tokenService;
@@ -68,5 +68,10 @@ public class AutheticationController {
     @GetMapping("/all-schedule-valid-deadline")
     public ResponseEntity getAllByValidDeadline() {
         return ResponseEntity.ok((scheduleService).getAllByValidDeadline());
+    }
+
+    @GetMapping("/latest-videos")
+    public ResponseEntity getLatest() {
+        return ResponseEntity.ok((videoService).getLatest());
     }
 }

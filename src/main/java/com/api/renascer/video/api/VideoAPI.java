@@ -26,4 +26,10 @@ public class VideoAPI {
     public ResponseEntity getAllByCategory(@PathVariable String category) {
         return ResponseEntity.ok((service).getAllByCategory(category));
     }
+
+    @CrossOrigin
+    @GetMapping("/latest-videos")
+    public ResponseEntity getLatest() {
+        return ResponseEntity.ok((service).getLatest());
+    }
 }
