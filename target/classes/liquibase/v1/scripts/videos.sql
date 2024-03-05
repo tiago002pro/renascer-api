@@ -1,30 +1,75 @@
 INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category)
 VALUES
     (
-        'JnnsKUmT1ho',
-        'AMBIENTES QUE TE MOLDAM & QUE TE MUDAM',
+        'yEtBqbxZVxo',
+        'O PLANO PERFEITO DO PAI',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-02-25 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'FAMILY'
+    ),
+    (
+        '7jNA2Dl96-8',
+        'ENCONTROS COM DEUS QUE NOS MARCAM',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-02-18 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'FAMILY'
+    ),
+    (
+        'tdgFtL4R38w',
+        'QUANDO JESUS TOCA EM VOCÊ',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-02-11 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'FAMILY'
+    ),
+    (
+        'KGsZcRK6WIA',
+        'ONDE EU CAÍ ?',
+        'Pra. Eunice Lea',
+        'Culto da familia.',
+        '2024-02-04 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'FAMILY'
+    ),
+    (
+        'vBZIWWvL0bM',
+        'ENTRE A FÉ E A INCREDULIDADE',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-01-28 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'FAMILY'
+    ),
+    (
+        'u-B2TpKClOA',
+        'MILAGRES DO JORDÃO',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-01-21 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FMILAGRES%20DO%20JORD%C3%83O.jpg?alt=media&token=554fe1f3-54aa-4a07-ba1c-bc03eb6d12b7',
+        'FAMILY'
+    ),
+    (
+        '7oLT-PCS5Ww',
+        'SOBRENATURAL UM CHAMADO PARA TODOS',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-01-14 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'FAMILY'
+    ),
+    (
+        'xFmiOEYg5Us',
+        'ESPERANÇA PARA O NOVO TEMPO',
         'Pr. Willian Grossi',
         'Culto da familia.',
-        '2023-12-03 00:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/AMBIENTES%20QUE%20TE%20MOLDAM%20%26%20QUE%20TE%20MUDAM.jpg?alt=media&token=1d682a91-eb2a-40b2-872d-7d0d4051e983',
-        'FAMILY'
-    ),
-    (
-        'Z08IVjOvsVg',
-        'O PODER DE UMA FAMÍLIA CURADA',
-        'Pr. Sênior Marcio Ribeiro',
-        'Culto da familia.',
-        '2023-11-26 00:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/O%20PODER%20DE%20UMA%20FAM%C3%8DLIA%20CURADA.jpg?alt=media&token=cca7f4c9-18c7-47bc-ab3c-e45dfeb25592',
-        'FAMILY'
-    ),
-    (
-        'c9F-vYKodog',
-        'OUSE ACREDITAR EM MILAGRES',
-        'Pr. Sênior Marcio Ribeiro',
-        'Culto da familia.',
-        '2023-09-17 00:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/OUSE%20ACREDITAR%20EM%20MILAGRES.jpg?alt=media&token=e558ef2f-d489-43ba-be3a-07fe8fe41549',
+        '2024-01-07 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FESPERAN%C3%87A%20PARA%20O%20NOVO%20TEMPO.jpg?alt=media&token=ca618e2a-4ef0-4144-937a-a9f1d7a475e3',
         'FAMILY'
     ),
    (
