@@ -31,7 +31,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.GET, "/auth/all-videos-by-category/{category}").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/all-schedule-valid-deadline").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/latest-videos").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/email/recover-password").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/user/recover-password/{email}").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/user").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
