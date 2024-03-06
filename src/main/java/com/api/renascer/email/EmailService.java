@@ -33,7 +33,7 @@ public class EmailService {
         message.setTo(email.to());
         message.setSubject("Redefinição de senha");
         message.setText(text);
-        .        mailSender.send(message);
+       mailSender.send(message);
     }
 
     public void sendEmail2() throws UnsupportedEncodingException {
