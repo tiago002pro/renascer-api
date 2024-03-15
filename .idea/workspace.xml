@@ -6,12 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/UserAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/person/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/scripts/videos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/scripts/videos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,6 +243,13 @@
       <workItem from="1709479628936" duration="8020000" />
       <workItem from="1709519358099" duration="5495000" />
       <workItem from="1709697839874" duration="627000" />
+      <workItem from="1709779538971" duration="1332000" />
+      <workItem from="1710005507436" duration="7426000" />
+      <workItem from="1710082914483" duration="1270000" />
+      <workItem from="1710133037562" duration="1199000" />
+      <workItem from="1710197045741" duration="2218000" />
+      <workItem from="1710380286878" duration="2783000" />
+      <workItem from="1710458114849" duration="2560000" />
     </task>
     <servers />
   </component>
@@ -305,11 +315,6 @@
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/UserAPI.java</url>
           <line>24</line>
           <option name="timeStamp" value="61" />
@@ -349,7 +354,17 @@
           <line>49</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="person" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

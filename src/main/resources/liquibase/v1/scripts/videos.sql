@@ -1,6 +1,33 @@
 INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category)
 VALUES
     (
+        '51w8kNHUOy8',
+        'O AVIVAMENTO QUE PRECISAMOS',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-03-10 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'djYcWim9EjU',
+        'VENCENDO AS DIFICULDADES',
+        'Pra. Inês Brustulin',
+        'Culto da familia.',
+        '2024-03-03 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia%202.jpg?alt=media&token=7cf8bada-28d8-4052-a53a-b72b72efff3b',
+        'FAMILY'
+    ),
+    (
+        '383p4ids6qo',
+        'QUEM VOCÊ PENSA QUE É?',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-03-02 19:00:00.000',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FQUEM%20VOC%C3%8A%20PENSA%20QUE%20%C3%89.jpg?alt=media&token=4c48049f-5140-4bbc-8804-8ad4ef246671',
+        'FAMILY'
+    ),
+    (
         'yEtBqbxZVxo',
         'O PLANO PERFEITO DO PAI',
         'Pr. Sênior Marcio Ribeiro',
@@ -15,7 +42,7 @@ VALUES
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
         '2024-02-18 19:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FENCONTROS%20COM%20DEUS%20QUE%20NOS%20MARCAM.jpg?alt=media&token=48f81929-9a21-4fa5-a75c-65e89b94a586',
         'FAMILY'
     ),
     (
@@ -24,7 +51,7 @@ VALUES
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
         '2024-02-11 19:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FQUANDO%20JESUS%20TOCA%20EM%20VOC%C3%8A.jpg?alt=media&token=abc27ffa-b48f-4d10-943f-f1b7ceca2dc3',
         'FAMILY'
     ),
     (
@@ -33,7 +60,7 @@ VALUES
         'Pra. Eunice Lea',
         'Culto da familia.',
         '2024-02-04 19:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FONDE%20EU%20CA%C3%8D.jpg?alt=media&token=9b716334-102e-4aab-b733-eabd334df290',
         'FAMILY'
     ),
     (
@@ -42,7 +69,7 @@ VALUES
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
         '2024-01-28 19:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FENTRE%20A%20F%C3%89%20E%20A%20INCREDULIDADE.jpg?alt=media&token=dbe14cc1-6641-42d1-96a8-9c45cea0a94c',
         'FAMILY'
     ),
     (
@@ -60,7 +87,7 @@ VALUES
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
         '2024-01-14 19:00:00.000',
-        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FCulto%20da%20familia.jpg?alt=media&token=1ba19bc2-4419-405e-b159-5d4d2a4a1acb',
+        'https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/videos%2FSOBRENATURAL%20UM%20CHAMADO%20PARA%20TODOS.jpg?alt=media&token=81498c70-1430-4e86-a2e9-c9f292c38db3',
         'FAMILY'
     ),
     (

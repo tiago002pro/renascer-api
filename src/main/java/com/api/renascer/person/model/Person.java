@@ -7,6 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Table(name = "person")
 @Entity(name = "person")
 @Data
@@ -24,7 +26,7 @@ public class Person {
     @Enumerated(EnumType.STRING)
     private GenderType gender;
     @Column(name = "date_birth")
-    private String dateBirth;
+    private Date dateBirth;
     @Column(name = "marital_status")
     @Enumerated(EnumType.STRING)
     private MaritalStatusType maritalStatus;
@@ -37,6 +39,24 @@ public class Person {
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "address_id")
     private Address address;
+    @Column(name = "local_church")
+    private String localChurch;
+    @Column(name = "relationship_church")
+    private String relationshipChurch;
+    @Column(name = "entry_date")
+    private Date entryDate;
+    @Column(name = "entry_by")
+    private String entryBy;
+    @Column(name = "came_from")
+    private String cameFrom;
+    @Column(name = "baptized")
+    private Boolean baptized;
+    @Column(name = "accepted_jesus")
+    private Boolean acceptedJesus;
+    @Column(name = "leader")
+    private Boolean leader;
+    @Column(name = "pastor")
+    private Boolean pastor;
 
     public Person(String name, String email) {
         this.name = name;

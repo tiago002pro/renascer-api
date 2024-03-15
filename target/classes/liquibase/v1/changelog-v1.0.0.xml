@@ -2,48 +2,8 @@
                    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-    
+
     <changeSet id="1" author="tiagobarbosa02@outlook.com">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="users"/>
-            </not>
-        </preConditions>
-        <createTable tableName="users">
-            <column name="id" type="BIGINT" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="name" type="VARCHAR(255)"/>
-            <column name="login" type="VARCHAR(255)"/>
-            <column name="password" type="VARCHAR(255)"/>
-            <column name="role" type="VARCHAR(255)"/>
-            <column name="person_id" type="BIGINT"/>
-        </createTable>
-    </changeSet>
-
-    <changeSet id="2" author="tiagobarbosa02@outlook.com">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="person"/>
-            </not>
-        </preConditions>
-        <createTable tableName="person">
-            <column name="id" type="BIGINT" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="name" type="VARCHAR(255)"/>
-            <column name="email" type="VARCHAR(255)"/>
-            <column name="gender" type="VARCHAR(10)"/>
-            <column name="date_birth" type="VARCHAR(20)"/>
-            <column name="marital_status" type="VARCHAR(50)"/>
-            <column name="cell_phone" type="VARCHAR(20)"/>
-            <column name="phone" type="VARCHAR(20)"/>
-            <column name="profile_image" type="VARCHAR(255)"/>
-            <column name="address_id" type="BIGINT"/>
-        </createTable>
-    </changeSet>
-
-    <changeSet id="3" author="tiagobarbosa02@outlook.com">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="address"/>
@@ -64,33 +24,68 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="2" author="tiagobarbosa02@outlook.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="person"/>
+            </not>
+        </preConditions>
+        <createTable tableName="person">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="gender" type="VARCHAR(10)"/>
+            <column name="date_birth" type="DATE"/>
+            <column name="marital_status" type="VARCHAR(50)"/>
+            <column name="cell_phone" type="VARCHAR(20)"/>
+            <column name="phone" type="VARCHAR(20)"/>
+            <column name="profile_image" type="VARCHAR(255)"/>
+            <column name="local_church" type="VARCHAR(255)"/>
+            <column name="relationship_church" type="VARCHAR(255)"/>
+            <column name="entry_date" type="DATE"/>
+            <column name="entry_by" type="VARCHAR(255)"/>
+            <column name="came_from" type="VARCHAR(255)"/>
+            <column name="baptized" type="BOOLEAN"/>
+            <column name="accepted_jesus" type="BOOLEAN"/>
+            <column name="leader" type="BOOLEAN"/>
+            <column name="pastor" type="BOOLEAN"/>
+            <column name="address_id" type="BIGINT">
+                <constraints
+                        referencedTableName="address"
+                        referencedColumnNames="id"
+                        foreignKeyName="fk_address_id_references_id_in_address"
+                />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="tiagobarbosa02@outlook.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="users"/>
+            </not>
+        </preConditions>
+        <createTable tableName="users">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="login" type="VARCHAR(255)"/>
+            <column name="password" type="VARCHAR(255)"/>
+            <column name="role" type="VARCHAR(255)"/>
+            <column name="person_id" type="BIGINT">
+                <constraints
+                    referencedTableName="person"
+                    referencedColumnNames="id"
+                    foreignKeyName="fk_person_id_references_id_in_person"
+                />
+            </column>
+        </createTable>
+    </changeSet>
+
     <changeSet id="4" author="tiagobarbosa02@outlook.com">
-        <preConditions>
-            <columnExists tableName="users" columnName="person_id"/>
-        </preConditions>
-        <addForeignKeyConstraint
-                baseTableName="users"
-                baseColumnNames="person_id"
-                constraintName="fk_person_id_references_id_in_person"
-                referencedTableName="person"
-                referencedColumnNames="id"
-        />
-    </changeSet>
-
-    <changeSet id="5" author="tiagobarbosa02@outlook.com">
-        <preConditions>
-            <columnExists tableName="person" columnName="address_id"/>
-        </preConditions>
-        <addForeignKeyConstraint
-                baseTableName="person"
-                baseColumnNames="address_id"
-                constraintName="fk_address_id_references_id_in_address"
-                referencedTableName="address"
-                referencedColumnNames="id"
-        />
-    </changeSet>
-
-    <changeSet id="6" author="tiagobarbosa02@outlook.com">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="video"/>
@@ -110,7 +105,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="7" author="tiagobarbosa02@outlook.com">
+    <changeSet id="5" author="tiagobarbosa02@outlook.com">
         <preConditions onFail="MARK_RAN">
             <sqlCheck expectedResult="f">
                 SELECT count(*) > 0 FROM video v
@@ -120,7 +115,7 @@
         <sqlFile path="/liquibase/v1/scripts/videos.sql" />
     </changeSet>
 
-    <changeSet id="8" author="tiagobarbosa02@outlook.com">
+    <changeSet id="6" author="tiagobarbosa02@outlook.com">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="schedule"/>
@@ -141,7 +136,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="9" author="tiagobarbosa02@outlook.com">
+    <changeSet id="7" author="tiagobarbosa02@outlook.com">
         <preConditions onFail="MARK_RAN">
             <sqlCheck expectedResult="f">
                 SELECT count(*) > 0 FROM schedule s
