@@ -26,7 +26,7 @@ public class Person {
     @Enumerated(EnumType.STRING)
     private GenderType gender;
     @Column(name = "date_birth")
-    private Date dateBirth;
+    private String dateBirth;
     @Column(name = "marital_status")
     @Enumerated(EnumType.STRING)
     private MaritalStatusType maritalStatus;
@@ -44,7 +44,7 @@ public class Person {
     @Column(name = "relationship_church")
     private String relationshipChurch;
     @Column(name = "entry_date")
-    private Date entryDate;
+    private String entryDate;
     @Column(name = "entry_by")
     private String entryBy;
     @Column(name = "came_from")

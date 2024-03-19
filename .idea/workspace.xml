@@ -6,15 +6,66 @@
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/renascer/person/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/scripts/videos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/v1/scripts/videos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/RenascerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/email/Email.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/email/EmailAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/email/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityConfigurations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/SecurityFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/infra/security/TokenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/api/AddressAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/api/PersonAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/enums/GenderType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/enums/MaritalStatusType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/model/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/model/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/repository/AddressRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/repository/PersonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/person/service/PersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/api/ScheduleAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/model/Schedule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/repository/ScheduleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/schedule/service/ScheduleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/api/SermonAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/model/Sermon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/repository/SermonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/sermon/service/SermonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/LoginResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/controller/AutheticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/controller/UserAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/AuthenticationDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/RegisterDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/domain/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/service/AuthorizationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/video/api/VideoAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/video/model/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/video/repository/VideoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/renascer/video/service/VideoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/changelog-master.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/liquibase.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/scripts/schedule.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/v1/scripts/videos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/renascer-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/renascer-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.api.renascer.RenascerApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.api.renascer.RenascerApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/renascer/RenascerApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +301,8 @@
       <workItem from="1710197045741" duration="2218000" />
       <workItem from="1710380286878" duration="2783000" />
       <workItem from="1710458114849" duration="2560000" />
+      <workItem from="1710607025794" duration="2492000" />
+      <workItem from="1710800649559" duration="3480000" />
     </task>
     <servers />
   </component>
@@ -276,7 +329,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java</url>
-          <line>25</line>
+          <line>22</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -286,7 +339,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java</url>
-          <line>24</line>
+          <line>21</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

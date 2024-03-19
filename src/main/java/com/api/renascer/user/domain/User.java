@@ -10,6 +10,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 @Table(name = "users")
@@ -25,6 +26,10 @@ public class User implements UserDetails {
     private String name;
     @Column(name = "login")
     private String login;
+    @Column(name = "creation_date")
+    private Date creationDate;
+    @Column(name = "agree_terms_of_use")
+    private Boolean agreeTermsOfUse;
     @Column(name = "password")
     private String password;
     @Column(name = "role")
@@ -36,6 +41,8 @@ public class User implements UserDetails {
     public User(String name, String login, String password, UserRole role, Person person) {
         this.name = name;
         this.login = login;
+        this.creationDate = new Date();
+        this.agreeTermsOfUse = Boolean.TRUE;
         this.password = password;
         this.role = role;
         this.person = person;

@@ -37,14 +37,14 @@
             <column name="name" type="VARCHAR(255)"/>
             <column name="email" type="VARCHAR(255)"/>
             <column name="gender" type="VARCHAR(10)"/>
-            <column name="date_birth" type="DATE"/>
+            <column name="date_birth" type="VARCHAR(10)"/>
             <column name="marital_status" type="VARCHAR(50)"/>
             <column name="cell_phone" type="VARCHAR(20)"/>
             <column name="phone" type="VARCHAR(20)"/>
             <column name="profile_image" type="VARCHAR(255)"/>
             <column name="local_church" type="VARCHAR(255)"/>
             <column name="relationship_church" type="VARCHAR(255)"/>
-            <column name="entry_date" type="DATE"/>
+            <column name="entry_date" type="VARCHAR(10)"/>
             <column name="entry_by" type="VARCHAR(255)"/>
             <column name="came_from" type="VARCHAR(255)"/>
             <column name="baptized" type="BOOLEAN"/>
@@ -73,6 +73,8 @@
             </column>
             <column name="name" type="VARCHAR(255)"/>
             <column name="login" type="VARCHAR(255)"/>
+            <column name="creation_date" type="TIMESTAMP"/>
+            <column name="agree_terms_of_use" type="BOOLEAN"/>
             <column name="password" type="VARCHAR(255)"/>
             <column name="role" type="VARCHAR(255)"/>
             <column name="person_id" type="BIGINT">
