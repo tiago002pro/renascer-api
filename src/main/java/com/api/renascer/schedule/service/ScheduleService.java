@@ -6,7 +6,11 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 @Service
 public class ScheduleService {
@@ -25,5 +29,11 @@ public class ScheduleService {
     @Transactional
     public List<Schedule> getAllByValidDeadline() {
         return repository.findAllByValidDeadline();
+    }
+
+    public List<Schedule> getByStartDate(String startDate) throws ParseException {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM", Locale.ENGLISH);
+        Date date = formatter.parse(startDate);
+        return repository.findByStartDate(date);
     }
 }

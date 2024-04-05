@@ -17,6 +17,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
+import java.util.Date;
+
 @RestController
     @RequestMapping("/auth")
     public class AutheticationController {
@@ -68,6 +71,11 @@ import org.springframework.web.bind.annotation.*;
     @GetMapping("/all-schedule-valid-deadline")
     public ResponseEntity getAllByValidDeadline() {
         return ResponseEntity.ok((scheduleService).getAllByValidDeadline());
+    }
+
+    @GetMapping("/all-schedule/by-date")
+    public ResponseEntity getByStartDate(@RequestParam("startDate") String startDate) throws ParseException {
+        return ResponseEntity.ok((scheduleService).getByStartDate(startDate));
     }
 
     @GetMapping("/latest-videos")
