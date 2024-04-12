@@ -73,7 +73,7 @@ import java.util.Date;
         return ResponseEntity.ok((scheduleService).getAllByValidDeadline());
     }
 
-    @GetMapping("/all-schedule/by-date")
+    @PostMapping("/all-schedule/by-date")
     public ResponseEntity getByStartDate(@RequestParam("startDate") String startDate) throws ParseException {
         return ResponseEntity.ok((scheduleService).getByStartDate(startDate));
     }

@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
     @Query(nativeQuery = true,
-            value = "SELECT * FROM schedule s WHERE s.deadline > now() ORDER BY s.start_date")
+            value = "SELECT * FROM schedule s WHERE s.deadline > now() AND s.registration IS TRUE ORDER BY s.start_date")
     List<Schedule> findAllByValidDeadline();
 
     @Query(nativeQuery = true,
