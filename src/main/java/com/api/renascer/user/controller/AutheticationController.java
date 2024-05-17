@@ -78,6 +78,12 @@ import java.util.Date;
         return ResponseEntity.ok((scheduleService).getByStartDate(startDate));
     }
 
+    @PostMapping("/generate-schedule")
+    public ResponseEntity getByStartDate(@RequestParam("month") String month,
+                                         @RequestParam("year") String year) throws ParseException {
+        return ResponseEntity.ok((scheduleService).generateSchedule(month, year));
+    }
+
     @GetMapping("/latest-videos")
     public ResponseEntity getLatest() {
         return ResponseEntity.ok((videoService).getLatest());

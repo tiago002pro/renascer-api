@@ -28,4 +28,16 @@ public class Schedule {
     private Boolean registration;
     @Column(name = "deadline")
     private Date deadline;
+
+    public Schedule() {
+
+    }
+
+    public Schedule(String title, Date startDate, Date endDate) {
+        this.title = title;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.deadline = endDate;
+        this.registration = Boolean.FALSE;
+    }
 }
