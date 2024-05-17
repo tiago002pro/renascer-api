@@ -1,6 +1,78 @@
 INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category)
 VALUES
     (
+        'toPjNQokvAw',
+        'A UNÇÃO DO ROMPIMENTO',
+        'Pr. Vandinho Soares',
+        'Culto da familia.',
+        '2024-05-05 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'EMqNaMsiTY4',
+        'QUANDO O MINISTÉRIO PROFÉTICO TOCA A VIDA DIÁRIA',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-04-28 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'cxUmJ2jPRdA',
+        'UMA IGREJA ATIVADA PELO ESPÍRITO SANTO',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-04-21 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'q2olQh7XBlE',
+        'NOITE PROFÉTICA',
+        'Profeta Luis López',
+        'Culto da familia.',
+        '2024-04-19 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'XSG5hXzDsvg',
+        'ESCOLHAS DE CURA',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-04-14 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'l4ZzXQ9tb4M',
+        'ANTES PERDIDO AGORA ENVIADO',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-03-31 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'mjRoqr9wPmE',
+        'FÉ PESSOAL E RELACIONAL',
+        'Pr. Sênior Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-03-24 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'MPEtnLKiU8Y',
+        'CHAMAS PARA UM AVIVAMENTO',
+        'Pr. Vandinho Soares',
+        'Culto da familia.',
+        '2024-03-17 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
         '51w8kNHUOy8',
         'O AVIVAMENTO QUE PRECISAMOS',
         'Pr. Sênior Marcio Ribeiro',
