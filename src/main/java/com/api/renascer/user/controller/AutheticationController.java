@@ -88,4 +88,9 @@ import java.util.Date;
     public ResponseEntity getLatest() {
         return ResponseEntity.ok((videoService).getLatest());
     }
+
+    @GetMapping("/search-videos")
+    public ResponseEntity searchVideos(@RequestParam("search") String search) {
+        return ResponseEntity.ok((videoService).searchVideos(search));
+    }
 }

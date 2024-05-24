@@ -24,11 +24,17 @@ public class VideoService {
 
     @Transactional
     public List<Video> getAllByCategory(String category) {
+        category = category.equals("ALL") ? "" : category;
         return repository.findAllByCategory(category);
     }
 
     @Transactional
     public List<Video> getLatest() {
         return repository.findLatest();
+    }
+
+    @Transactional
+    public List<Video> searchVideos(String search) {
+        return repository.searchVideos(search);
     }
 }

@@ -33,6 +33,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.POST, "/auth/all-schedule/by-date").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/generate-schedule").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/latest-videos").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/auth/search-videos").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/user/recover-password/{email}").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/user").hasRole("ADMIN")
                         .anyRequest().authenticated()
