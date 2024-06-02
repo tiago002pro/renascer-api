@@ -26,6 +26,8 @@ public class Schedule {
     private String image;
     @Column(name = "registration")
     private Boolean registration;
+    @Column(name = "link")
+    private String link;
     @Column(name = "deadline")
     private Date deadline;
 
