@@ -77,6 +77,7 @@
             <column name="agree_terms_of_use" type="BOOLEAN"/>
             <column name="password" type="VARCHAR(255)"/>
             <column name="role" type="VARCHAR(255)"/>
+            <column name="token_expo_notification" type="VARCHAR(255)"/>
             <column name="person_id" type="BIGINT">
                 <constraints
                     referencedTableName="person"

@@ -58,7 +58,7 @@ import java.util.Date;
 
         String encryptedPassword = new BCryptPasswordEncoder().encode(data.password());
         Person person = new Person(data.name(), data.login());
-        User newUser = new User(data.name(), data.login(), encryptedPassword, data.role(), person);
+        User newUser = new User(data.name(), data.login(), encryptedPassword, data.role(), data.expoToken(), person);
 
         return ResponseEntity.ok(this.repository.save(newUser));
     }

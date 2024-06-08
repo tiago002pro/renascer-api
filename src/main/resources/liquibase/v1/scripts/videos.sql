@@ -1,6 +1,33 @@
 INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category)
 VALUES
     (
+        '0mlAUJowBLY',
+        'O QUE NÃO PODE FALTAR ?',
+        'Apóstolo Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-05-26 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'NkSL0Vtt2ck',
+        'FORJADO NO FOGO',
+        'Apóstolo Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-05-19 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
+        'sZRDOYsTzj0',
+        'HERDEIROS DAS CHAVES DOS CÉUS',
+        'Apóstolo Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-05-12 19:00:00.000',
+        '',
+        'FAMILY'
+    ),
+    (
         'toPjNQokvAw',
         'A UNÇÃO DO ROMPIMENTO',
         'Pr. Vandinho Soares',

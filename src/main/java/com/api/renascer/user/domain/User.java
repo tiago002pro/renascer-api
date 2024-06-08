@@ -34,17 +34,20 @@ public class User implements UserDetails {
     private String password;
     @Column(name = "role")
     private UserRole role;
+    @Column(name = "token_expo_notification")
+    private String tokenExpoNotification;
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "person_id")
     private Person person;
 
-    public User(String name, String login, String password, UserRole role, Person person) {
+    public User(String name, String login, String password, UserRole role, String tokenExpo, Person person) {
         this.name = name;
         this.login = login;
         this.creationDate = new Date();
         this.agreeTermsOfUse = Boolean.TRUE;
         this.password = password;
         this.role = role;
+        this.tokenExpoNotification = tokenExpo;
         this.person = person;
     }
 
