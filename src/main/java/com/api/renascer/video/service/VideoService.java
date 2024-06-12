@@ -37,4 +37,8 @@ public class VideoService {
     public List<Video> searchVideos(String search) {
         return repository.searchVideos(search);
     }
+
+    public List<Video> getVideosToNotify() {
+        return this.repository.findVideosToNotify();
+    }
 }

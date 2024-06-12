@@ -140,13 +140,22 @@
         </createTable>
     </changeSet>
 
-<!--    <changeSet id="7" author="tiagobarbosa02@outlook.com">-->
-<!--        <preConditions onFail="MARK_RAN">-->
-<!--            <sqlCheck expectedResult="f">-->
-<!--                SELECT count(*) > 0 FROM schedule s-->
-<!--            </sqlCheck>-->
-<!--        </preConditions>-->
-<!--        <comment>Inserindo os eventos.</comment>-->
-<!--        <sqlFile path="/liquibase/v1/scripts/schedule.sql" />-->
-<!--    </changeSet>-->
+    <changeSet id="7" author="tiagobarbosa02@outlook.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="notification"/>
+            </not>
+        </preConditions>
+        <createTable tableName="notification">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="date" type="TIMESTAMP"/>
+            <column name="read" type="BOOLEAN"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="entity_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>

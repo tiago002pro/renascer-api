@@ -24,4 +24,13 @@ public interface VideoRepository extends JpaRepository<Video, Long> {
                     "   OR lower(v.author) LIKE concat('%', lower(:search), '%') " +
                     " ORDER BY v.date")
     List<Video> searchVideos(@Param("search") String search);
+
+    @Query(nativeQuery = true,
+            value = " SELECT * FROM video v " +
+                    " WHERE NOT EXISTS (" +
+                    "   SELECT 1 FROM notification n" +
+                    "   WHERE n.entity_id = v.id AND n.type = 'VIDEOS'" +
+                    " ) " +
+                    " ORDER BY v.id ")
+    List<Video> findVideosToNotify();
 }

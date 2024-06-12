@@ -30,6 +30,10 @@ public class ScheduleService {
         return repository.findAllByValidDeadline();
     }
 
+    public List<Schedule> getScheduleToNotify() {
+        return this.repository.findScheduleToNotify();
+    }
+
     public List<ScheduleDTO> getByStartDate(String startDate) throws ParseException {
         if (startDate.length() < 10) {
             startDate = startDate + "-01";
@@ -90,43 +94,23 @@ public class ScheduleService {
             case 1:
                 startDate.set(Calendar.HOUR, 19);
                 endDate.set(Calendar.HOUR, 21);
-                return new Schedule(
-                        "Culto Da Família",
-                        startDate.getTime(),
-                        endDate.getTime()
-                );
+                return new Schedule("Culto Da Família", startDate.getTime(), endDate.getTime());
             case 2:
                 startDate.set(Calendar.HOUR, 20);
                 endDate.set(Calendar.HOUR, 21);
-                return new Schedule(
-                        "Reunião De Oração",
-                        startDate.getTime(),
-                        endDate.getTime()
-                );
+                return new Schedule("Reunião De Oração", startDate.getTime(), endDate.getTime());
             case 3:
                 startDate.set(Calendar.HOUR, 20);
                 endDate.set(Calendar.HOUR, 21);
-                return new Schedule(
-                        "Estudo Conecte",
-                        startDate.getTime(),
-                        endDate.getTime()
-                );
+                return new Schedule("Estudo Conecte", startDate.getTime(), endDate.getTime());
             case 4:
                 startDate.set(Calendar.HOUR, 20);
                 endDate.set(Calendar.HOUR, 22);
-                return new Schedule(
-                        "Culto De Calebração",
-                        startDate.getTime(),
-                        endDate.getTime()
-                );
+                return new Schedule("Culto De Calebração", startDate.getTime(), endDate.getTime());
             case 7:
                 startDate.set(Calendar.HOUR, 19);
                 endDate.set(Calendar.HOUR, 21);
-                return new Schedule(
-                        "Culto De Ensino",
-                        startDate.getTime(),
-                        endDate.getTime()
-                );
+                return new Schedule("Culto De Ensino", startDate.getTime(), endDate.getTime());
         }
         return null;
     }

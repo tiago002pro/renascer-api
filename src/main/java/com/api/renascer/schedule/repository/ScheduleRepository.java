@@ -16,4 +16,13 @@ public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
     @Query(nativeQuery = true,
             value = "SELECT * FROM schedule s WHERE s.start_date > :startDate ORDER BY s.start_date")
     List<Schedule> findByStartDate(@Param("startDate") Date startDate);
+
+    @Query(nativeQuery = true,
+            value = " SELECT * FROM schedule s " +
+                    " WHERE NOT EXISTS (" +
+                    "   SELECT 1 FROM notification n" +
+                    "   WHERE n.entity_id = s.id AND n.type = 'EVENTOS'" +
+                    " ) " +
+                    " ORDER BY s.id ")
+    List<Schedule> findScheduleToNotify();
 }
