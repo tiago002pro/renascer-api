@@ -24,4 +24,9 @@ public class NotificationAPI {
     public ResponseEntity readNotification(@PathVariable Long id) {
         return ResponseEntity.ok((service).readNotification(id));
     }
+
+    @GetMapping("/check-if-there-are-notifications")
+    public ResponseEntity getNotifications() {
+        return ResponseEntity.ok((service).checkIfThereAreNotifications());
+    }
 }

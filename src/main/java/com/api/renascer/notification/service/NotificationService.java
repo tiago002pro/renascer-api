@@ -34,6 +34,10 @@ public class NotificationService {
         return repository.getAllNotifications();
     }
 
+    public Boolean checkIfThereAreNotifications() {
+        return repository.checkIfThereAreNotifications();
+    }
+
     //Todos os dias as 09hs ver se tem video novo
     //Todos os dias as 13hs ver se tem evento novo
 
