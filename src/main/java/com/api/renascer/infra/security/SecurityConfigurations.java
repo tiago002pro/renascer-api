@@ -28,6 +28,7 @@ public class SecurityConfigurations {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/auth/check-email/{email}").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/all-videos-by-category/{category}").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/all-schedule-valid-deadline").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/all-schedule/by-date").permitAll()

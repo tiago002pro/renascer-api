@@ -8,6 +8,7 @@ import com.api.renascer.user.domain.AuthenticationDTO;
 import com.api.renascer.user.domain.RegisterDTO;
 import com.api.renascer.user.domain.User;
 import com.api.renascer.user.repository.UserRepository;
+import com.api.renascer.user.service.UserService;
 import com.api.renascer.video.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -28,18 +29,21 @@ import java.util.Date;
     private final TokenService tokenService;
     private final VideoService videoService;
     private final ScheduleService scheduleService;
+    private final UserService userService;
 
     @Autowired
     public AutheticationController(AuthenticationManager authenticationManager,
                                    UserRepository repository,
                                    TokenService tokenService,
                                    VideoService videoService,
-                                   ScheduleService scheduleService) {
+                                   ScheduleService scheduleService,
+                                   UserService userService) {
         this.authenticationManager = authenticationManager;
         this.repository = repository;
         this.tokenService = tokenService;
         this.videoService = videoService;
         this.scheduleService = scheduleService;
+        this.userService = userService;
     }
 
     @PostMapping("/login")
@@ -61,6 +65,11 @@ import java.util.Date;
         User newUser = new User(data.name(), data.login(), encryptedPassword, data.role(), data.expoToken(), person);
 
         return ResponseEntity.ok(this.repository.save(newUser));
+    }
+
+    @PostMapping("/check-email/{email}")
+    public ResponseEntity checkEmail(@PathVariable String email) {
+        return ResponseEntity.ok((userService).checkEmail(email));
     }
 
     @GetMapping("/all-videos-by-category/{category}")
