@@ -19,7 +19,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
-import java.util.Date;
 
 @RestController
     @RequestMapping("/auth")
@@ -70,6 +69,12 @@ import java.util.Date;
     @PostMapping("/check-email/{email}")
     public ResponseEntity checkEmail(@PathVariable String email) {
         return ResponseEntity.ok((userService).checkEmail(email));
+    }
+
+    @PostMapping("/recover-password/{email}")
+    public void recoverPassword(@PathVariable String email) {
+        (userService).recoverPassword(email);
+        ResponseEntity.noContent().build();
     }
 
     @GetMapping("/all-videos-by-category/{category}")

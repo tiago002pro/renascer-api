@@ -25,9 +25,4 @@ public class UserAPI {
         (service).delete(id);
         return ResponseEntity.noContent().build();
     }
-
-    @PostMapping("/recover-password/{email}")
-    public void recoverPassword(@PathVariable String email) {
-        service.recoverPassword(email);
-    }
 }
