@@ -2,24 +2,32 @@ package com.api.renascer.user.service;
 
 import com.api.renascer.email.Email;
 import com.api.renascer.email.EmailService;
+import com.api.renascer.user.domain.ChangePassword;
 import com.api.renascer.user.domain.User;
 import com.api.renascer.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.Optional;
 import java.util.Random;
 
 @Service
 public class UserService {
     private final UserRepository repository;
     private final EmailService emailService;
+    private final AuthenticationManager authenticationManager;
 
     @Autowired
-    public UserService(UserRepository repository, EmailService emailService) {
+    public UserService(UserRepository repository,
+                       EmailService emailService,
+                       AuthenticationManager authenticationManager) {
         this.repository = repository;
         this.emailService = emailService;
+        this.authenticationManager = authenticationManager;
     }
 
     public User loadById(Long id) {
@@ -87,5 +95,22 @@ public class UserService {
 
         this.emailService.sendEmail(email);
         this.repository.save(user);
+    }
+
+    public void alterPassword(ChangePassword data) {
+        try {
+            var usernamePassword = new UsernamePasswordAuthenticationToken(data.login(), data.password());
+            var auth = this.authenticationManager.authenticate(usernamePassword);
+
+            String encryptedPassword = new BCryptPasswordEncoder().encode(data.newPassword());
+            Long userId = ((User) auth.getPrincipal()).getId();
+            Optional<User> userOptional = this.repository.findById(userId);
+            User user = userOptional.get();
+            user.setPassword(encryptedPassword);
+
+            this.repository.save(user);
+        } catch (Exception e) {
+            throw new RuntimeException("Falha na autenticação: ".concat(e.getMessage()));
+        }
     }
 }
