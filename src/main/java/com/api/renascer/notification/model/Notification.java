@@ -27,15 +27,18 @@ public class Notification {
     @Column(name = "type", length = 20)
     @Enumerated(EnumType.STRING)
     private NotificationTypes types;
+    @Column(name = "user_id")
+    private Long userId;
     @Column(name = "entity_id")
     private Long entityId;
 
-    public Notification(String title, String description, Date date, Boolean read, NotificationTypes types, Long entityId) {
+    public Notification(String title, String description, Date date, Boolean read, NotificationTypes types, Long userId, Long entityId) {
         this.title = title;
         this.description = description;
         this.date = date;
         this.read = read;
         this.types = types;
+        this.userId = userId;
         this.entityId = entityId;
     }
 }

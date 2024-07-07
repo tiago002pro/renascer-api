@@ -16,8 +16,8 @@ public class NotificationAPI {
     }
 
     @GetMapping("/all")
-    public ResponseEntity getAllNotifications() {
-        return ResponseEntity.ok((service).getAllNotifications());
+    public ResponseEntity getAllNotifications(@RequestParam(name = "userId") Long userId) {
+        return ResponseEntity.ok((service).getAllNotifications(userId));
     }
 
     @PutMapping("/read/{id}")
@@ -26,7 +26,18 @@ public class NotificationAPI {
     }
 
     @GetMapping("/check-if-there-are-notifications")
-    public ResponseEntity getNotifications() {
-        return ResponseEntity.ok((service).checkIfThereAreNotifications());
+    public ResponseEntity getNotifications(@RequestParam(name = "userId") Long userId) {
+        return ResponseEntity.ok((service).checkIfThereAreNotifications(userId));
+    }
+
+    @PutMapping("/read-all/{userId}")
+    public ResponseEntity readAllNotifications(@PathVariable(name = "userId") Long userId) {
+        return ResponseEntity.ok((service).readAllNotifications(userId));
+    }
+
+    @DeleteMapping("/delete-all")
+    public ResponseEntity deleteAllNotifications(@RequestParam(name = "userId") Long userId) {
+        (service).deleteAllNotifications(userId);
+        return ResponseEntity.noContent().build();
     }
 }
