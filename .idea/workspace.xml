@@ -5,12 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/helper/dto/ExpoNotificationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/api/NotificationAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/api/NotificationAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/helper/enums/NotificationTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/helper/enums/NotificationTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/model/Notification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/repository/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/repository/NotificationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/model/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/repository/ScheduleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/repository/ScheduleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/service/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/service/ScheduleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/api/SermonAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/model/Sermon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/repository/SermonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/sermon/service/SermonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/model/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/model/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/repository/VideoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/repository/VideoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog-v1.0.0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +37,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,6 +70,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Maven.renascer [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.renascer [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [deploy].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
@@ -61,6 +78,11 @@
     &quot;Maven.renascer [org.apache.maven.plugins:maven-deploy-plugin:3.0.0:help].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [org.apache.maven.plugins:maven-install-plugin:3.0.1:help].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [org.apache.maven.plugins:maven-install-plugin:3.0.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.renascer [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.renascer [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.renascer [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.renascer [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.renascer [verify].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -298,7 +320,12 @@
       <workItem from="1720232287782" duration="5266000" />
       <workItem from="1720281975361" duration="2174000" />
       <workItem from="1720317753338" duration="7187000" />
-      <workItem from="1720370978864" duration="4117000" />
+      <workItem from="1720370978864" duration="5340000" />
+      <workItem from="1720488222904" duration="1881000" />
+      <workItem from="1720499207553" duration="593000" />
+      <workItem from="1720577437783" duration="7564000" />
+      <workItem from="1720743428468" duration="7572000" />
+      <workItem from="1721092596913" duration="1193000" />
     </task>
     <servers />
   </component>
@@ -322,16 +349,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/person/PersonService.java</url>
           <line>24</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/6.0.2/spring-security-web-6.0.2.jar!/org/springframework/security/web/ObservationFilterChainDecorator.class</url>
@@ -364,19 +381,9 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
           <line>70</line>
           <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java</url>
@@ -395,23 +402,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java</url>
-          <line>54</line>
+          <line>107</line>
           <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java</url>

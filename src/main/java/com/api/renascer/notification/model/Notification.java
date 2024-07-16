@@ -2,16 +2,15 @@ package com.api.renascer.notification.model;
 
 import com.api.renascer.notification.helper.enums.NotificationTypes;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Table(name = "notification")
 @Entity(name = "notification")
 @Data
-@NoArgsConstructor
+@Builder
 public class Notification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,14 +30,4 @@ public class Notification {
     private Long userId;
     @Column(name = "entity_id")
     private Long entityId;
-
-    public Notification(String title, String description, Date date, Boolean read, NotificationTypes types, Long userId, Long entityId) {
-        this.title = title;
-        this.description = description;
-        this.date = date;
-        this.read = read;
-        this.types = types;
-        this.userId = userId;
-        this.entityId = entityId;
-    }
 }

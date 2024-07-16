@@ -5,7 +5,8 @@ import lombok.Getter;
 @Getter
 public enum NotificationTypes {
     VIDEOS("VIDEOS", 1),
-    EVENTOS("EVENTOS", 2);
+    EVENTOS("EVENTOS", 2),
+    BIRTHDAY("BIRTHDAY", 3);
 
     private String type;
     private int value;

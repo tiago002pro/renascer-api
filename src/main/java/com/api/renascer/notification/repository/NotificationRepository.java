@@ -1,6 +1,5 @@
 package com.api.renascer.notification.repository;
 
-import com.api.renascer.notification.helper.enums.NotificationTypes;
 import com.api.renascer.notification.model.Notification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -36,10 +35,10 @@ public interface NotificationRepository extends JpaRepository<Notification, Long
                 "   :entityId " +
                 " FROM users u ")
     void insertNotification(@Param("title") String title,
-                           @Param("description") String description,
-                           @Param("date") Date date,
-                           @Param("type") String type,
-                           @Param("entityId") Long entityId);
+                            @Param("description") String description,
+                            @Param("date") Date date,
+                            @Param("type") String type,
+                            @Param("entityId") Long entityId);
 
     @Modifying
     @Transactional

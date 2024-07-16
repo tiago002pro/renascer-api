@@ -114,4 +114,8 @@ public class ScheduleService {
         }
         return null;
     }
+
+    public void readScheduleByIds(List<Long> ids) {
+        this.repository.readScheduleByIds(ids);
+    }
 }

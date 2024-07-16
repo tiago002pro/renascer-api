@@ -41,4 +41,8 @@ public class VideoService {
     public List<Video> getVideosToNotify() {
         return this.repository.findVideosToNotify();
     }
+
+    public void readVideosByIds(List<Long> ids) {
+        this.repository.readVideosByIds(ids);
+    }
 }

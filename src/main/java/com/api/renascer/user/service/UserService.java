@@ -11,7 +11,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -112,5 +112,13 @@ public class UserService {
         } catch (Exception e) {
             throw new RuntimeException("Falha na autenticação: ".concat(e.getMessage()));
         }
+    }
+
+    public List<User> getAllBirthdays() {
+        return this.repository.findAllBirthdays();
+    }
+
+    public List<String> getAllExpoToken() {
+        return this.repository.findAllExpoToken();
     }
 }

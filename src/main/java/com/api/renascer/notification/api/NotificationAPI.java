@@ -40,4 +40,14 @@ public class NotificationAPI {
         (service).deleteAllNotifications(userId);
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("/expo")
+    public ResponseEntity expoNotification(@RequestParam("token") String expoToken) {
+        return ResponseEntity.ok((service).expoNotification(expoToken));
+    }
+
+    @PostMapping("/generate")
+    public ResponseEntity generate() {
+        return ResponseEntity.ok((service).generate());
+    }
 }

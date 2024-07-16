@@ -36,6 +36,8 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.POST, "/auth/generate-schedule").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/latest-videos").permitAll()
                         .requestMatchers(HttpMethod.GET, "/auth/search-videos").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/notification/expo").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/notification/generate").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/user").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
