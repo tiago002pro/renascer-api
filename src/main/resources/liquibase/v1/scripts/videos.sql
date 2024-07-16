@@ -1,11 +1,21 @@
 INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category, notified)
 VALUES
     (
+        'TPllGyUE3IA',
+        'TRILHA DE MATURIDADE',
+        'Pr. Apóstolo Marcio Ribeiro',
+        'Série de mensagens Trilha de Maturidade.',
+        '2024-07-14 19:00:00.000',
+        '',
+        'TRILHA_DE_MATURIDADE',
+        false
+    ),
+    (
         'RDgJaTCXAfA',
         'TRILHA DE MATURIDADE',
         'Pr. Vandinho Soares',
         'Série de mensagens Trilha de Maturidade.',
-        '2024-06-07 19:00:00.000',
+        '2024-07-07 19:00:00.000',
         '',
         'TRILHA_DE_MATURIDADE',
         true
