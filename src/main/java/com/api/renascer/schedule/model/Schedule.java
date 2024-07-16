@@ -30,6 +30,8 @@ public class Schedule {
     private String link;
     @Column(name = "deadline")
     private Date deadline;
+    @Column(name = "notified")
+    private Boolean notified;
 
     public Schedule() {
 

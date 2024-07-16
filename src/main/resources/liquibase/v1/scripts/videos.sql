@@ -1,5 +1,45 @@
-INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category)
+INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category, notified)
 VALUES
+    (
+        'RDgJaTCXAfA',
+        'TRILHA DE MATURIDADE',
+        'Pr. Vandinho Soares',
+        'Série de mensagens Trilha de Maturidade.',
+        '2024-06-07 19:00:00.000',
+        '',
+        'TRILHA_DE_MATURIDADE',
+        true
+    ),
+    (
+        '951N4pOvmCo',
+        'LEGADO ',
+        'Apóstolo Marcio Ribeiro',
+        'Culto da familia.',
+        '2024-06-30 19:00:00.000',
+        '',
+        'FAMILY',
+        true
+    ),
+    (
+        'Jaszwhuppgo',
+        'FIM DE SEMANA PROFÉTICO',
+        'Pr. Marlon Borba',
+        'Culto profético.',
+        '2024-06-23 19:00:00.000',
+        '',
+        'CONFERENCE',
+        true
+    ),
+    (
+        'wix02ZNHcNc',
+        'FIM DE SEMANA PROFÉTICO',
+        'Profeta Tiago Ribeiro',
+        'Culto profético.',
+        '2024-06-22 19:00:00.000',
+        '',
+        'CONFERENCE',
+        true
+    ),
     (
         'QXEAG4OloHU',
         'CORAÇÃO NO LUGAR CERTO',
@@ -7,7 +47,8 @@ VALUES
         'Culto da familia.',
         '2024-06-16 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'FIJn_QQE1No',
@@ -16,7 +57,8 @@ VALUES
         'Culto da familia.',
         '2024-06-09 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         '4vlpAAfRTbY',
@@ -25,7 +67,8 @@ VALUES
         'Culto da familia.',
         '2024-06-02 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         '0mlAUJowBLY',
@@ -34,7 +77,8 @@ VALUES
         'Culto da familia.',
         '2024-05-26 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'NkSL0Vtt2ck',
@@ -43,7 +87,8 @@ VALUES
         'Culto da familia.',
         '2024-05-19 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'sZRDOYsTzj0',
@@ -52,7 +97,8 @@ VALUES
         'Culto da familia.',
         '2024-05-12 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'toPjNQokvAw',
@@ -61,7 +107,8 @@ VALUES
         'Culto da familia.',
         '2024-05-05 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'EMqNaMsiTY4',
@@ -70,7 +117,8 @@ VALUES
         'Culto da familia.',
         '2024-04-28 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'cxUmJ2jPRdA',
@@ -79,7 +127,8 @@ VALUES
         'Culto da familia.',
         '2024-04-21 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'q2olQh7XBlE',
@@ -88,7 +137,8 @@ VALUES
         'Culto da familia.',
         '2024-04-19 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'XSG5hXzDsvg',
@@ -97,7 +147,8 @@ VALUES
         'Culto da familia.',
         '2024-04-14 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'l4ZzXQ9tb4M',
@@ -106,7 +157,8 @@ VALUES
         'Culto da familia.',
         '2024-03-31 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'mjRoqr9wPmE',
@@ -115,7 +167,8 @@ VALUES
         'Culto da familia.',
         '2024-03-24 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'MPEtnLKiU8Y',
@@ -124,7 +177,8 @@ VALUES
         'Culto da familia.',
         '2024-03-17 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         '51w8kNHUOy8',
@@ -133,7 +187,8 @@ VALUES
         'Culto da familia.',
         '2024-03-10 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'djYcWim9EjU',
@@ -142,7 +197,8 @@ VALUES
         'Culto da familia.',
         '2024-03-03 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         '383p4ids6qo',
@@ -151,7 +207,8 @@ VALUES
         'Culto da familia.',
         '2024-03-02 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'yEtBqbxZVxo',
@@ -160,7 +217,8 @@ VALUES
         'Culto da familia.',
         '2024-02-25 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         '7jNA2Dl96-8',
@@ -169,7 +227,8 @@ VALUES
         'Culto da familia.',
         '2024-02-18 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'tdgFtL4R38w',
@@ -178,7 +237,8 @@ VALUES
         'Culto da familia.',
         '2024-02-11 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'KGsZcRK6WIA',
@@ -187,7 +247,8 @@ VALUES
         'Culto da familia.',
         '2024-02-04 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'vBZIWWvL0bM',
@@ -196,7 +257,8 @@ VALUES
         'Culto da familia.',
         '2024-01-28 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'u-B2TpKClOA',
@@ -205,7 +267,8 @@ VALUES
         'Culto da familia.',
         '2024-01-21 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         '7oLT-PCS5Ww',
@@ -214,7 +277,8 @@ VALUES
         'Culto da familia.',
         '2024-01-14 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'xFmiOEYg5Us',
@@ -223,7 +287,8 @@ VALUES
         'Culto da familia.',
         '2024-01-07 19:00:00.000',
         '',
-        'FAMILY'
+        'FAMILY',
+        true
     ),
     (
         'YIKKOdK4TyI',
@@ -232,7 +297,8 @@ VALUES
         'Conferência Águas Profundas',
         '2023-10-15 19:00:00.000',
         '',
-        'CONFERENCE'
+        'CONFERENCE',
+        true
     ),
     (
         'SRBp1o3Pk0M',
@@ -241,7 +307,8 @@ VALUES
         'Conferência Águas Profundas',
         '2023-10-15 09:00:00.000',
         '',
-        'CONFERENCE'
+        'CONFERENCE',
+        true
     ),
     (
         '6d-PxNI2dOo',
@@ -250,7 +317,8 @@ VALUES
         'Conferência Águas Profundas',
         '2023-10-14 19:00:00.000',
         '',
-        'CONFERENCE'
+        'CONFERENCE',
+        true
     ),
     (
         'W2oZSxM1LTg',
@@ -259,7 +327,8 @@ VALUES
         'Última ministração do acampamento da Rede Conecte.',
         '2023-07-23 19:00:00.000',
         '',
-        'CONFERENCE'
+        'CONFERENCE',
+        true
     ),
     (
         '7Iuc-grMhu4',
@@ -268,5 +337,6 @@ VALUES
         'Conferência Águas Profundas com o Pr. Cris Batiston do Ministério Filhos do Homem',
         '2023-08-14 19:00:00.000',
         '',
-        'CONFERENCE'
+        'CONFERENCE',
+        true
     );

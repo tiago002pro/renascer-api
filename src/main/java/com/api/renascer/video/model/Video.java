@@ -26,4 +26,6 @@ public class Video {
     private String coverImage;
     @Column(name = "category")
     private String category;
+    @Column(name = "notified")
+    private Boolean notified;
 }

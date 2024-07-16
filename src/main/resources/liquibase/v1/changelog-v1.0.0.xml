@@ -105,6 +105,7 @@
             <column name="date" type="TIMESTAMP"/>
             <column name="cover_image" type="VARCHAR(255)"/>
             <column name="category" type="VARCHAR(50)"/>
+            <column name="notified" type="BOOLEAN"/>
         </createTable>
     </changeSet>
 
@@ -137,6 +138,7 @@
             <column name="registration" type="BOOLEAN"/>
             <column name="link" type="VARCHAR(255)"/>
             <column name="deadline" type="TIMESTAMP"/>
+            <column name="notified" type="BOOLEAN"/>
         </createTable>
     </changeSet>
 
