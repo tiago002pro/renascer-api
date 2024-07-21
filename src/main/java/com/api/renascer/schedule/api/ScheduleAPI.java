@@ -18,7 +18,6 @@ public class ScheduleAPI {
         this.service = service;
     }
 
-    @CrossOrigin
     @GetMapping("/all")
     public ResponseEntity getAll() {
         return ResponseEntity.ok((service).getAll());

@@ -20,19 +20,16 @@ public class VideoAPI {
         return ResponseEntity.ok((service).getById(id));
     }
 
-    @CrossOrigin
     @GetMapping("/all")
     public ResponseEntity getAll() {
         return ResponseEntity.ok((service).getAll());
     }
 
-    @CrossOrigin
     @GetMapping("/all-by-category/{category}")
     public ResponseEntity getAllByCategory(@PathVariable String category) {
         return ResponseEntity.ok((service).getAllByCategory(category));
     }
 
-    @CrossOrigin
     @GetMapping("/latest-videos")
     public ResponseEntity getLatest() {
         return ResponseEntity.ok((service).getLatest());

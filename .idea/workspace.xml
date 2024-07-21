@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="">
+    <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="Teste Cors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -307,11 +313,34 @@
       <workItem from="1721092596913" duration="3706000" />
       <workItem from="1721432093458" duration="5111000" />
       <workItem from="1721527689220" duration="4078000" />
+      <workItem from="1721534204054" duration="1342000" />
+      <workItem from="1721569373020" duration="647000" />
     </task>
+    <task id="LOCAL-00001" summary="Teste Cors">
+      <option name="closed" value="true" />
+      <created>1721534782771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721534782771</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Teste Cors">
+      <option name="closed" value="true" />
+      <created>1721534791708</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721534791708</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Teste Cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste Cors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -362,11 +391,6 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java</url>
           <line>83</line>
           <option name="timeStamp" value="102" />
@@ -385,11 +409,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java</url>
           <line>107</line>
           <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java</url>
