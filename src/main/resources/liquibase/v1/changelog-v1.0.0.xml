@@ -99,6 +99,7 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="video_id" type="VARCHAR(255)"/>
+            <column name="youtube_frame" type="VARCHAR(255)"/>
             <column name="title" type="VARCHAR(255)"/>
             <column name="author" type="VARCHAR(255)"/>
             <column name="description" type="TEXT"/>

@@ -22,6 +22,10 @@ public class VideoService {
         return repository.findAll();
     }
 
+    public Video getById(Long id) {
+        return repository.findById(id).get();
+    }
+
     @Transactional
     public List<Video> getAllByCategory(String category) {
         category = category.equals("ALL") ? "" : category;

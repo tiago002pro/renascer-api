@@ -1,7 +1,8 @@
-INSERT INTO public.video (video_id, title, author, description, "date", cover_image, category, notified)
+INSERT INTO public.video (video_id, youtube_frame, title, author, description, "date", cover_image, category, notified)
 VALUES
     (
         'TPllGyUE3IA',
+        'https://www.youtube.com/embed/TPllGyUE3IA?si=K6lJasD_cMwxKMOS',
         'TRILHA DE MATURIDADE',
         'Pr. Apóstolo Marcio Ribeiro',
         'Série de mensagens Trilha de Maturidade.',
@@ -12,6 +13,7 @@ VALUES
     ),
     (
         'RDgJaTCXAfA',
+        'https://www.youtube.com/embed/RDgJaTCXAfA?si=qdf66Or4K_lrI1WQ',
         'TRILHA DE MATURIDADE',
         'Pr. Vandinho Soares',
         'Série de mensagens Trilha de Maturidade.',
@@ -22,6 +24,7 @@ VALUES
     ),
     (
         '951N4pOvmCo',
+        'https://www.youtube.com/embed/951N4pOvmCo?si=aPmqLOpRMmrsfF0H',
         'LEGADO ',
         'Apóstolo Marcio Ribeiro',
         'Culto da familia.',
@@ -32,6 +35,7 @@ VALUES
     ),
     (
         'Jaszwhuppgo',
+        'https://www.youtube.com/embed/Jaszwhuppgo?si=v0mk33VsSd8c9U27',
         'FIM DE SEMANA PROFÉTICO',
         'Pr. Marlon Borba',
         'Culto profético.',
@@ -42,6 +46,7 @@ VALUES
     ),
     (
         'wix02ZNHcNc',
+        'https://www.youtube.com/embed/wix02ZNHcNc?si=GG94Mzq_i9ysHXAn',
         'FIM DE SEMANA PROFÉTICO',
         'Profeta Tiago Ribeiro',
         'Culto profético.',
@@ -52,6 +57,7 @@ VALUES
     ),
     (
         'QXEAG4OloHU',
+        'https://www.youtube.com/embed/QXEAG4OloHU?si=CciE16uKucLtKwG_',
         'CORAÇÃO NO LUGAR CERTO',
         'Apóstolo Marcio Ribeiro',
         'Culto da familia.',
@@ -62,6 +68,7 @@ VALUES
     ),
     (
         'FIJn_QQE1No',
+        'https://www.youtube.com/embed/FIJn_QQE1No?si=7dKy1RPlBoxDaEKz',
         'UMA FAMÍLIA CHEIA DE GRAÇA',
         'Apóstolo Marcio Ribeiro',
         'Culto da familia.',
@@ -72,6 +79,7 @@ VALUES
     ),
     (
         '4vlpAAfRTbY',
+        'https://www.youtube.com/embed/4vlpAAfRTbY?si=cNECXHEU4-mjnO62',
         'O PODER DA ORAÇÃO',
         'Pr. Vandinho Soares',
         'Culto da familia.',
@@ -82,6 +90,7 @@ VALUES
     ),
     (
         '0mlAUJowBLY',
+        'https://www.youtube.com/embed/0mlAUJowBLY?si=Tv8KO3wUniYlZqMW',
         'O QUE NÃO PODE FALTAR ?',
         'Apóstolo Marcio Ribeiro',
         'Culto da familia.',
@@ -92,6 +101,7 @@ VALUES
     ),
     (
         'NkSL0Vtt2ck',
+        'https://www.youtube.com/embed/NkSL0Vtt2ck?si=0O0xI95GPuXzBklD',
         'FORJADO NO FOGO',
         'Apóstolo Marcio Ribeiro',
         'Culto da familia.',
@@ -102,6 +112,7 @@ VALUES
     ),
     (
         'sZRDOYsTzj0',
+        'https://www.youtube.com/embed/sZRDOYsTzj0?si=Kcvb8ARN95O4i6MX',
         'HERDEIROS DAS CHAVES DOS CÉUS',
         'Apóstolo Marcio Ribeiro',
         'Culto da familia.',
@@ -112,6 +123,7 @@ VALUES
     ),
     (
         'toPjNQokvAw',
+        'https://www.youtube.com/embed/toPjNQokvAw?si=s8nQU_1cGN998E9B',
         'A UNÇÃO DO ROMPIMENTO',
         'Pr. Vandinho Soares',
         'Culto da familia.',
@@ -122,6 +134,7 @@ VALUES
     ),
     (
         'EMqNaMsiTY4',
+        'https://www.youtube.com/embed/EMqNaMsiTY4?si=2ZG7ybLFfqB2vsQT',
         'QUANDO O MINISTÉRIO PROFÉTICO TOCA A VIDA DIÁRIA',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -132,6 +145,7 @@ VALUES
     ),
     (
         'cxUmJ2jPRdA',
+        'https://www.youtube.com/embed/cxUmJ2jPRdA?si=t58X2PahEBMSLTJQ',
         'UMA IGREJA ATIVADA PELO ESPÍRITO SANTO',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -142,6 +156,7 @@ VALUES
     ),
     (
         'q2olQh7XBlE',
+        'https://www.youtube.com/embed/q2olQh7XBlE?si=XHlw_lBwIPMjXR1v',
         'NOITE PROFÉTICA',
         'Profeta Luis López',
         'Culto da familia.',
@@ -152,6 +167,7 @@ VALUES
     ),
     (
         'XSG5hXzDsvg',
+        'https://www.youtube.com/embed/XSG5hXzDsvg?si=u6NjI6uCTVu1Gml9',
         'ESCOLHAS DE CURA',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -162,6 +178,7 @@ VALUES
     ),
     (
         'l4ZzXQ9tb4M',
+        'https://www.youtube.com/embed/l4ZzXQ9tb4M?si=YM6YXFTOnxqPffCo',
         'ANTES PERDIDO AGORA ENVIADO',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -172,6 +189,7 @@ VALUES
     ),
     (
         'mjRoqr9wPmE',
+        'https://www.youtube.com/embed/mjRoqr9wPmE?si=LR-SqVppPoFSl6B_',
         'FÉ PESSOAL E RELACIONAL',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -182,6 +200,7 @@ VALUES
     ),
     (
         'MPEtnLKiU8Y',
+        'https://www.youtube.com/embed/MPEtnLKiU8Y?si=9UAkppSdwEY9DF-Q',
         'CHAMAS PARA UM AVIVAMENTO',
         'Pr. Vandinho Soares',
         'Culto da familia.',
@@ -192,6 +211,7 @@ VALUES
     ),
     (
         '51w8kNHUOy8',
+        'https://www.youtube.com/embed/51w8kNHUOy8?si=nJXYWcUVbTFaBGnQ',
         'O AVIVAMENTO QUE PRECISAMOS',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -202,6 +222,7 @@ VALUES
     ),
     (
         'djYcWim9EjU',
+        'https://www.youtube.com/embed/djYcWim9EjU?si=Z6Pk-lEYibcfMGiV',
         'VENCENDO AS DIFICULDADES',
         'Pra. Inês Brustulin',
         'Culto da familia.',
@@ -212,6 +233,7 @@ VALUES
     ),
     (
         '383p4ids6qo',
+        'https://www.youtube.com/embed/383p4ids6qo?si=wVK6YOtadYU7RwbO',
         'QUEM VOCÊ PENSA QUE É?',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -222,6 +244,7 @@ VALUES
     ),
     (
         'yEtBqbxZVxo',
+        'https://www.youtube.com/embed/yEtBqbxZVxo?si=CAQNOkDBatgDDwYJ',
         'O PLANO PERFEITO DO PAI',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -232,6 +255,7 @@ VALUES
     ),
     (
         '7jNA2Dl96-8',
+        'https://www.youtube.com/embed/7jNA2Dl96-8?si=_gbQ4VXp3aMVL8tJ',
         'ENCONTROS COM DEUS QUE NOS MARCAM',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -242,6 +266,7 @@ VALUES
     ),
     (
         'tdgFtL4R38w',
+        'https://www.youtube.com/embed/tdgFtL4R38w?si=dNdzdf4_yuSONEwi',
         'QUANDO JESUS TOCA EM VOCÊ',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -252,6 +277,7 @@ VALUES
     ),
     (
         'KGsZcRK6WIA',
+        'https://www.youtube.com/embed/KGsZcRK6WIA?si=n4z4S9SH740xDwOA',
         'ONDE EU CAÍ ?',
         'Pra. Eunice Lea',
         'Culto da familia.',
@@ -262,6 +288,7 @@ VALUES
     ),
     (
         'vBZIWWvL0bM',
+        'https://www.youtube.com/embed/vBZIWWvL0bM?si=sW0Ez0pb7V33aVAC',
         'ENTRE A FÉ E A INCREDULIDADE',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -272,6 +299,7 @@ VALUES
     ),
     (
         'u-B2TpKClOA',
+        'https://www.youtube.com/embed/u-B2TpKClOA?si=8hSEcHIuMLMZW9P3',
         'MILAGRES DO JORDÃO',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -282,6 +310,7 @@ VALUES
     ),
     (
         '7oLT-PCS5Ww',
+        'https://www.youtube.com/embed/7oLT-PCS5Ww?si=1JVh7di-bVJyiDj8',
         'SOBRENATURAL UM CHAMADO PARA TODOS',
         'Pr. Sênior Marcio Ribeiro',
         'Culto da familia.',
@@ -292,6 +321,7 @@ VALUES
     ),
     (
         'xFmiOEYg5Us',
+        'https://www.youtube.com/embed/xFmiOEYg5Us?si=jofzFnizfHPWIu7Q',
         'ESPERANÇA PARA O NOVO TEMPO',
         'Pr. Willian Grossi',
         'Culto da familia.',
@@ -302,6 +332,7 @@ VALUES
     ),
     (
         'YIKKOdK4TyI',
+        'https://www.youtube.com/embed/YIKKOdK4TyI?si=pDvuukXzqQPdlPbY',
         'SESSÃO 3 - CONFERÊNCIA ÁGUAS PROFUNDAS',
         'Ap. Israel Onoriobe',
         'Conferência Águas Profundas',
@@ -312,6 +343,7 @@ VALUES
     ),
     (
         'SRBp1o3Pk0M',
+        'https://www.youtube.com/embed/SRBp1o3Pk0M?si=xArjrec-cnNKUSjK',
         'SESSÃO 2 - CONFERÊNCIA ÁGUAS PROFUNDAS',
         'Pr. Vandinho Soares',
         'Conferência Águas Profundas',
@@ -322,6 +354,7 @@ VALUES
     ),
     (
         '6d-PxNI2dOo',
+        'https://www.youtube.com/embed/6d-PxNI2dOo?si=Vasw7LT2A7YqslYt',
         'SESSÃO 1 - CONFERÊNCIA ÁGUAS PROFUNDAS',
         'Pr. Vandinho Soares',
         'Conferência Águas Profundas',
@@ -332,6 +365,7 @@ VALUES
     ),
     (
         'W2oZSxM1LTg',
+        'https://www.youtube.com/embed/W2oZSxM1LTg?si=I_oJumy3DoGNXe3N',
         'DESENVOLVENDO A SALVAÇÃO',
         'Leonardo Jesuscopy',
         'Última ministração do acampamento da Rede Conecte.',
@@ -342,6 +376,7 @@ VALUES
     ),
     (
         '7Iuc-grMhu4',
+        'https://www.youtube.com/embed/7Iuc-grMhu4?si=Tbs3clP0xAAeS3aA',
         'CONFERÊNCIA ÁGUAS PROFUNDAS',
         'Pr. Cris Batiston',
         'Conferência Águas Profundas com o Pr. Cris Batiston do Ministério Filhos do Homem',

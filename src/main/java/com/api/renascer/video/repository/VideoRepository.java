@@ -24,7 +24,7 @@ public interface VideoRepository extends JpaRepository<Video, Long> {
             value = " SELECT * FROM video v " +
                     " WHERE lower(v.title) LIKE concat('%', lower(:search), '%')" +
                     "   OR lower(v.author) LIKE concat('%', lower(:search), '%') " +
-                    " ORDER BY v.date")
+                    " ORDER BY v.date DESC")
     List<Video> searchVideos(@Param("search") String search);
 
     @Query(nativeQuery = true,

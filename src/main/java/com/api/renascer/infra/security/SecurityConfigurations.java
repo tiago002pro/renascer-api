@@ -38,6 +38,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.GET, "/auth/search-videos").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/notification/expo").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/notification/generate").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/video/{id}").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/user").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )

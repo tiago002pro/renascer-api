@@ -14,6 +14,8 @@ public class Video {
     private Long id;
     @Column(name = "video_id")
     private String videoId;
+    @Column(name = "youtube_frame")
+    private String youtubeFrame;
     @Column(name = "title")
     private String title;
     @Column(name = "author")

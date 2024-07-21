@@ -15,6 +15,11 @@ public class VideoAPI {
         this.service = service;
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity getById(@PathVariable Long id) {
+        return ResponseEntity.ok((service).getById(id));
+    }
+
     @CrossOrigin
     @GetMapping("/all")
     public ResponseEntity getAll() {
