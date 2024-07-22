@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/video")
+@RequestMapping("/renascer-api/video")
 public class VideoAPI {
     private final VideoService service;
 
@@ -20,6 +20,16 @@ public class VideoAPI {
         return ResponseEntity.ok((service).getById(id));
     }
 
+    @GetMapping("/search-videos")
+    public ResponseEntity searchVideos(@RequestParam("search") String search) {
+        return ResponseEntity.ok((service).searchVideos(search));
+    }
+
+    @GetMapping("/latest-videos")
+    public ResponseEntity getLatest() {
+        return ResponseEntity.ok((service).getLatest());
+    }
+
     @GetMapping("/all")
     public ResponseEntity getAll() {
         return ResponseEntity.ok((service).getAll());
@@ -28,10 +38,5 @@ public class VideoAPI {
     @GetMapping("/all-by-category/{category}")
     public ResponseEntity getAllByCategory(@PathVariable String category) {
         return ResponseEntity.ok((service).getAllByCategory(category));
-    }
-
-    @GetMapping("/latest-videos")
-    public ResponseEntity getLatest() {
-        return ResponseEntity.ok((service).getLatest());
     }
 }

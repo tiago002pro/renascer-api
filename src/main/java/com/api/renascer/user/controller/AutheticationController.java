@@ -97,14 +97,4 @@ import java.text.ParseException;
                                          @RequestParam("year") String year) throws ParseException {
         return ResponseEntity.ok((scheduleService).generateSchedule(month, year));
     }
-
-    @GetMapping("/latest-videos")
-    public ResponseEntity getLatest() {
-        return ResponseEntity.ok((videoService).getLatest());
-    }
-
-    @GetMapping("/search-videos")
-    public ResponseEntity searchVideos(@RequestParam("search") String search) {
-        return ResponseEntity.ok((videoService).searchVideos(search));
-    }
 }

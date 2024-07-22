@@ -1,6 +1,5 @@
 package com.api.renascer.user.controller;
 
-import com.api.renascer.user.domain.AuthenticationDTO;
 import com.api.renascer.user.domain.ChangePassword;
 import com.api.renascer.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/renascer-api/user")
 public class UserAPI {
     private final UserService service;
 

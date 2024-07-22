@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/notification")
+@RequestMapping("/renascer-api/notification")
 public class NotificationAPI {
     private final NotificationService service;
 

@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/person")
+@RequestMapping("/renascer-api/person")
 public class PersonAPI {
     private final PersonService service;
 
