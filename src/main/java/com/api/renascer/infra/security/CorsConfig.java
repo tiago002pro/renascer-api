@@ -13,7 +13,7 @@ public class CorsConfig implements WebMvcConfigurer {
 
     public void addCorsMappings(CorsRegistry registry) {
        registry.addMapping("/**")
-           .allowedOrigins("http://localhost:4200, https://igrejarenascer.org.br, https://renascer-app-tiago-barbosas-projects.vercel.app")
+           .allowedOrigins("http://localhost:4200, https://igrejarenascer.org.br, https://renascer-app-tiago-barbosas-projects.vercel.app, https://renascer-app.vercel.app")
            .allowedMethods("*")
            .allowedHeaders("*")
            .allowCredentials(true)

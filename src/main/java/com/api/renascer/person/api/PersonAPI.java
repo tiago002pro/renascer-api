@@ -16,9 +16,8 @@ public class PersonAPI {
         this.service = service;
     }
 
-    @PutMapping("/update/{id}")
-    public ResponseEntity update(@RequestBody Person person,
-                                 @PathVariable Long id) {
+    @PutMapping("/update")
+    public ResponseEntity update(@RequestBody Person person) {
         return ResponseEntity.ok((service).save(person));
     }
 }
