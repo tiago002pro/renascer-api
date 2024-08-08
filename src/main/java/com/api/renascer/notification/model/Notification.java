@@ -2,8 +2,10 @@ package com.api.renascer.notification.model;
 
 import com.api.renascer.notification.helper.enums.NotificationTypes;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -11,6 +13,8 @@ import java.util.Date;
 @Entity(name = "notification")
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Notification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -106,7 +106,7 @@ public class ScheduleService {
             case 4:
                 startDate.set(Calendar.HOUR, 20);
                 endDate.set(Calendar.HOUR, 22);
-                return new Schedule("Culto De Calebração", startDate.getTime(), endDate.getTime());
+                return new Schedule("Quarta Do Poder", startDate.getTime(), endDate.getTime());
             case 7:
                 startDate.set(Calendar.HOUR, 19);
                 endDate.set(Calendar.HOUR, 21);
