@@ -1,5 +1,6 @@
 package com.api.renascer.video.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -22,6 +23,7 @@ public class Video {
     private String author;
     @Column(name = "description")
     private String description;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Sao_Paulo")
     @Column(name = "date")
     private Date date;
     @Column(name = "cover_image")

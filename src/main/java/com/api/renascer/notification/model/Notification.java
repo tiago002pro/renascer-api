@@ -1,6 +1,7 @@
 package com.api.renascer.notification.model;
 
 import com.api.renascer.notification.helper.enums.NotificationTypes;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,6 +24,7 @@ public class Notification {
     private String title;
     @Column(name = "description")
     private String description;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Sao_Paulo")
     @Column(name = "date")
     private Date date;
     @Column(name = "read")
