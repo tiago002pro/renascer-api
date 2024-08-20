@@ -1,6 +1,61 @@
 INSERT INTO public.video (video_id, youtube_frame, title, author, description, "date", cover_image, category, notified)
 VALUES
     (
+        'zKKDbgVMN6s',
+        'https://www.youtube.com/embed/zKKDbgVMN6s?si=K6lJasD_cMwxKMOS',
+        'PENTECOSTES',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Pentecostes.',
+        '2024-08-18 19:00:00.000',
+        '',
+        'PENTECOSTES',
+        false
+    ),
+    (
+        'zDDYgfjyRZ4',
+        'https://www.youtube.com/embed/zDDYgfjyRZ4?si=K6lJasD_cMwxKMOS',
+        'PENTECOSTES',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Pentecostes.',
+        '2024-08-11 19:00:00.000',
+        '',
+        'PENTECOSTES',
+        true
+    ),
+    (
+        'fisiWxyiuF0',
+        'https://www.youtube.com/embed/fisiWxyiuF0?si=K6lJasD_cMwxKMOS',
+        'PENTECOSTES',
+        'Pr. Vandinho Soares',
+        'Série de mensagens Pentecostes.',
+        '2024-08-04 19:00:00.000',
+        '',
+        'PENTECOSTES',
+        true
+    ),
+    (
+        'XY4nXLmh4zs',
+        'https://www.youtube.com/embed/XY4nXLmh4zs?si=K6lJasD_cMwxKMOS',
+        'TRILHA DE MATURIDADE',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Trilha de Maturidade.',
+        '2024-07-28 19:00:00.000',
+        '',
+        'TRILHA_DE_MATURIDADE',
+        true
+    ),
+    (
+        'W07krfcWQIw',
+        'https://www.youtube.com/embed/W07krfcWQIw?si=K6lJasD_cMwxKMOS',
+        'TRILHA DE MATURIDADE',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Trilha de Maturidade.',
+        '2024-07-21 19:00:00.000',
+        '',
+        'TRILHA_DE_MATURIDADE',
+        true
+    ),
+    (
         'TPllGyUE3IA',
         'https://www.youtube.com/embed/TPllGyUE3IA?si=K6lJasD_cMwxKMOS',
         'TRILHA DE MATURIDADE',
@@ -9,7 +64,7 @@ VALUES
         '2024-07-14 19:00:00.000',
         '',
         'TRILHA_DE_MATURIDADE',
-        false
+        true
     ),
     (
         'RDgJaTCXAfA',
