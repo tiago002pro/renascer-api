@@ -1,6 +1,8 @@
 package com.api.renascer.video.repository;
 
 import com.api.renascer.video.model.Video;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -14,11 +16,11 @@ import java.util.List;
 public interface VideoRepository extends JpaRepository<Video, Long> {
     @Query(nativeQuery = true,
         value = "SELECT * FROM video v WHERE v.category LIKE concat('%', :category, '%') ORDER BY v.date DESC")
-    List<Video> findAllByCategory(@Param("category") String category);
+    Page<Video> findAllByCategory(@Param("category") String category, Pageable pageable);
 
     @Query(nativeQuery = true,
-            value = "SELECT * FROM video v ORDER BY v.date DESC LIMIT 10")
-    List<Video> findLatest();
+            value = "SELECT * FROM video v ORDER BY v.date DESC")
+    Page<Video> findLatest(Pageable pageable);
 
     @Query(nativeQuery = true,
             value = " SELECT * FROM video v " +
@@ -38,4 +40,7 @@ public interface VideoRepository extends JpaRepository<Video, Long> {
                     " SET notified = TRUE " +
                     " WHERE id IN :ids ")
     void readVideosByIds(@Param("ids") List<Long> ids);
+
+    @Query(nativeQuery = true, value = "SELECT * FROM video v ORDER BY v.date DESC LIMIT 1")
+    Video findLastVideo();
 }

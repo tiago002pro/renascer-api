@@ -1,7 +1,11 @@
 package com.api.renascer.video.api;
 
+import com.api.renascer.video.model.Video;
 import com.api.renascer.video.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,17 +30,25 @@ public class VideoAPI {
     }
 
     @GetMapping("/latest-videos")
-    public ResponseEntity getLatest() {
-        return ResponseEntity.ok((service).getLatest());
+    public ResponseEntity<Page<Video>> getLatestVideos(@RequestParam("page") Integer page) {
+        Pageable pageable = PageRequest.of(page, 2);
+        return ResponseEntity.ok((service).getLatestVideos(pageable));
     }
 
     @GetMapping("/all")
-    public ResponseEntity getAll() {
-        return ResponseEntity.ok((service).getAll());
+    public ResponseEntity searchAll(@RequestParam("page") Integer page) {
+        Pageable pageable = PageRequest.of(page, 3);
+        return ResponseEntity.ok((service).searchAll(pageable));
+    }
+    @GetMapping("/all-by-category")
+    public ResponseEntity getAllByCategory(@RequestParam("category") String category,
+                                           @RequestParam("page") Integer page) {
+        Pageable pageable = PageRequest.of(page, 3);
+        return ResponseEntity.ok((service).getAllByCategory(category, pageable));
     }
 
-    @GetMapping("/all-by-category/{category}")
-    public ResponseEntity getAllByCategory(@PathVariable String category) {
-        return ResponseEntity.ok((service).getAllByCategory(category));
+    @GetMapping("/last-video")
+    public ResponseEntity<Video> getLastVideo() {
+        return ResponseEntity.ok((service).getLastVideo());
     }
 }
