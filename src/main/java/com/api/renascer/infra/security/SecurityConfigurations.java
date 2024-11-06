@@ -41,6 +41,7 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.POST, "/renascer-api/schedule/generate-schedule").permitAll()
                         .requestMatchers(HttpMethod.POST, "/renascer-api/notification/expo").permitAll()
                         .requestMatchers(HttpMethod.POST, "/renascer-api/notification/generate").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/renascer-api/bible/books").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)

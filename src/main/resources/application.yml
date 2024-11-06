@@ -1,7 +1,8 @@
-#server:
-#  port: 8443
-#  ssl:
-#    key-store: classpath:keystore.p12
-#    key-store-password: 1234567
-#    key-store-type: PKCS12
-#    key-alias: renascer-api
+api-integration:
+  a-biblia-digital:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHIiOiJNb24gTm92IDA0IDIwMjQgMjE6MjM6NTUgR01UKzAwMDAudGlhZ29iYXJib3NhMDJAb3V0bG9vay5jb20iLCJpYXQiOjE3MzA3NTU0MzV9.34Rpk2Hm5C3_erPueBcyEfRwBqy7WMkmyepOqbflXwo
+    get-books:
+      url: https://www.abibliadigital.com.br/api/books
+
+    get-versions:
+      url: https://www.abibliadigital.com.br/api/versions
