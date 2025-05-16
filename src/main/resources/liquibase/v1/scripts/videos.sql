@@ -1,20 +1,152 @@
 INSERT INTO public.video (video_id, youtube_frame, title, author, description, "date", cover_image, category, notified)
 VALUES
     (
-        'zKKDbgVMN6s',
-        'https://www.youtube.com/embed/zKKDbgVMN6s?si=K6lJasD_cMwxKMOS',
-        'PENTECOSTES',
+        'U4XA_95KJas',
+        'https://www.youtube.com/embed/U4XA_95KJas?si=rPjDFdBL9wkB2uyL',
+        'Dawidh Alves',
+        'Dawidh Alves',
+        'Culto da familia',
+        '2024-09-29 19:00:00.000',
+        '',
+        'OTHERS',
+        false
+    ),
+    (
+        '_wf_Encnuhg',
+        'https://www.youtube.com/embed/_wf_Encnuhg?si=MNDU1muFiVLoP77P',
+        'Direcionando nossos filhos nos dias de hoje',
+        'Pra. e psicóloga Soraia Alves',
+        'Pais e filhos.',
+        '2024-09-28 19:00:00.000',
+        '',
+        'OTHERS',
+        false
+    ),
+    (
+        '4XjlB9dbMco',
+        'https://www.youtube.com/embed/4XjlB9dbMco?si=VXjSWB2-bcbplsfc',
+        'MILAGRES 3',
         'Ap. Marcio Ribeiro',
-        'Série de mensagens Pentecostes.',
-        '2024-08-18 19:00:00.000',
+        'Série de mensagens Milagres',
+        '2024-09-22 19:00:00.000',
+        '',
+        'MILAGRES',
+        false
+    ),
+    (
+        'MwIQiDsX3Yg',
+        'https://www.youtube.com/embed/MwIQiDsX3Yg?si=2amIjWgNgydd3_C6',
+        'QUARTA DO PODER',
+        'Profeta Tiago Ribeiro',
+        'Quarta do poder',
+        '2024-09-18 19:00:00.000',
+        '',
+        'OTHERS',
+        false
+    ),
+    (
+        '7ZeSjVJ0Ck8',
+        'https://www.youtube.com/embed/7ZeSjVJ0Ck8?si=AD27KoQN5RvdreWZ',
+        'MILAGRES 2',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Milagres',
+        '2024-09-15 19:00:00.000',
+        '',
+        'MILAGRES',
+        false
+    ),
+    (
+        '-ftJ42ocrAo',
+        'https://www.youtube.com/embed/-ftJ42ocrAo?si=1PT-GvgKu-YQ_cPz',
+        'MILAGRES 1',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Milagres',
+        '2024-09-08 19:00:00.000',
+        '',
+        'MILAGRES',
+        false
+    ),
+    (
+        'ARFuoAGnMsc',
+        'https://www.youtube.com/embed/ARFuoAGnMsc?si=dQMq7KSijNIM73y2',
+        'PENTECOSTES (4/4)',
+        'Pr. Vandinho Soares',
+        'Série de mensagens Pentecostes',
+        '2024-09-01 19:00:00.000',
         '',
         'PENTECOSTES',
         false
     ),
     (
+        'xv1MDgDrF0I',
+        'https://www.youtube.com/embed/xv1MDgDrF0I?si=K6lJasD_cMwxKMOS',
+        'CONFERÊNCIA ÁGUAS PROFUNDAS (SESSÃO 3)',
+        'Pr. Rodrigo Scolmeister',
+        'Conferência Águas Profundas 2024',
+        '2024-08-25 19:00:00.000',
+        '',
+        'CONFERENCE',
+        false
+    ),
+    (
+        'xiP6vQLTOH8',
+        'https://www.youtube.com/embed/xiP6vQLTOH8?si=K6lJasD_cMwxKMOS',
+        'CONFERÊNCIA ÁGUAS PROFUNDAS (SESSÃO 2)',
+        'Pr. Vandinho Soares',
+        'Conferência Águas Profundas 2024',
+        '2024-08-24 19:00:00.000',
+        '',
+        'CONFERENCE',
+        false
+    ),
+    (
+        'DrImOsr30NU',
+        'https://www.youtube.com/embed/DrImOsr30NU?si=K6lJasD_cMwxKMOS',
+        'CONFERÊNCIA ÁGUAS PROFUNDAS (SESSÃO 1)',
+        'Pr. Rodrigo Scolmeister',
+        'Conferência Águas Profundas 2024',
+        '2024-08-23 20:00:00.000',
+        '',
+        'CONFERENCE',
+        false
+    ),
+    (
+        '8Vg3mzUt724',
+        'https://www.youtube.com/embed/8Vg3mzUt724?si=K6lJasD_cMwxKMOS',
+        'GLÓRIA AO REI DOS REIS',
+        'MINISTÉRIO SHOFAR',
+        'Canção do nosso ministério de louvor.',
+        '2024-08-23 12:00:00.000',
+        '',
+        'OTHERS',
+        false
+    ),
+    (
+        'QEW2PmzBrh8',
+        'https://www.youtube.com/embed/QEW2PmzBrh8?si=K6lJasD_cMwxKMOS',
+        'ACAMPAMENTO REDE CONECTE 2024',
+        'Rede Conecte',
+        'Acampamento de jovens da igreja Renascer Maringá realizado nos dias 16,17 e 18 e Agosto de 2024 em Água Boa-PR na estância fonte de vida.',
+        '2024-08-18 19:00:00.000',
+        '',
+        'OTHERS',
+        false
+    ),
+    (
+        'zKKDbgVMN6s',
+        'https://www.youtube.com/embed/zKKDbgVMN6s?si=K6lJasD_cMwxKMOS',
+        'PENTECOSTES (3/4)',
+        'Ap. Marcio Ribeiro',
+        'Série de mensagens Pentecostes.',
+        '2024-08-18 19:00:00.000',
+        '',
+        'PENTECOSTES',
+        true
+    ),
+    (
         'zDDYgfjyRZ4',
         'https://www.youtube.com/embed/zDDYgfjyRZ4?si=K6lJasD_cMwxKMOS',
-        'PENTECOSTES',
+        'PENTECOSTES (2/4)',
         'Ap. Marcio Ribeiro',
         'Série de mensagens Pentecostes.',
         '2024-08-11 19:00:00.000',
@@ -25,7 +157,7 @@ VALUES
     (
         'fisiWxyiuF0',
         'https://www.youtube.com/embed/fisiWxyiuF0?si=K6lJasD_cMwxKMOS',
-        'PENTECOSTES',
+        'PENTECOSTES (1/4)',
         'Pr. Vandinho Soares',
         'Série de mensagens Pentecostes.',
         '2024-08-04 19:00:00.000',
@@ -36,7 +168,7 @@ VALUES
     (
         'XY4nXLmh4zs',
         'https://www.youtube.com/embed/XY4nXLmh4zs?si=K6lJasD_cMwxKMOS',
-        'TRILHA DE MATURIDADE',
+        'TRILHA DE MATURIDADE (4/4)',
         'Ap. Marcio Ribeiro',
         'Série de mensagens Trilha de Maturidade.',
         '2024-07-28 19:00:00.000',
@@ -47,7 +179,7 @@ VALUES
     (
         'W07krfcWQIw',
         'https://www.youtube.com/embed/W07krfcWQIw?si=K6lJasD_cMwxKMOS',
-        'TRILHA DE MATURIDADE',
+        'TRILHA DE MATURIDADE (3/4)',
         'Ap. Marcio Ribeiro',
         'Série de mensagens Trilha de Maturidade.',
         '2024-07-21 19:00:00.000',
@@ -58,7 +190,7 @@ VALUES
     (
         'TPllGyUE3IA',
         'https://www.youtube.com/embed/TPllGyUE3IA?si=K6lJasD_cMwxKMOS',
-        'TRILHA DE MATURIDADE',
+        'TRILHA DE MATURIDADE (2/4)',
         'Ap. Marcio Ribeiro',
         'Série de mensagens Trilha de Maturidade.',
         '2024-07-14 19:00:00.000',
@@ -69,7 +201,7 @@ VALUES
     (
         'RDgJaTCXAfA',
         'https://www.youtube.com/embed/RDgJaTCXAfA?si=qdf66Or4K_lrI1WQ',
-        'TRILHA DE MATURIDADE',
+        'TRILHA DE MATURIDADE (1/4)',
         'Pr. Vandinho Soares',
         'Série de mensagens Trilha de Maturidade.',
         '2024-07-07 19:00:00.000',

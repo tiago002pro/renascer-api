@@ -1,7 +1,5 @@
 package com.api.renascer.application.web.abibliadigital;
 
-import com.api.renascer.infrastructure.api.abibliadigital.ABibliaDigitalServicePort;
-import com.api.renascer.infrastructure.dto.abibliadigital.BookResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;

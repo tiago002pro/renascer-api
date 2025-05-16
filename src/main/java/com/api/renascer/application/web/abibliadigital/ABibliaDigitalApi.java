@@ -1,6 +1,5 @@
 package com.api.renascer.application.web.abibliadigital;
 
-import com.api.renascer.infrastructure.dto.abibliadigital.BookResponse;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
