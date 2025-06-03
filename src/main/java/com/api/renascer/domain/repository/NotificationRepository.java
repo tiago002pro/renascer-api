@@ -4,8 +4,15 @@ import com.api.renascer.domain.model.Notification;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 public interface NotificationRepository {
+
+    Optional<Notification> findById(Long id);
+
+    Notification save(Notification notification);
+
+    List<Notification> saveAll(List<Notification> notifications);
 
     List<Notification> getAllNotifications(Long userId);
 

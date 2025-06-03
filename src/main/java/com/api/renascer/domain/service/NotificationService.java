@@ -15,7 +15,7 @@ public interface NotificationService {
 
     List<Notification> readAllNotifications(Long userId);
 
-    void deleteAllNotifications(Long userId);
+    String deleteAllNotifications(Long userId);
 
     String sendExpoNotification(ExpoNotificationDTO dto);
 

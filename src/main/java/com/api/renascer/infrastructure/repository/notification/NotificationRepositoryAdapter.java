@@ -7,12 +7,28 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
 public class NotificationRepositoryAdapter implements NotificationRepository {
 
     private final NotificationJPARepository notificationJPARepository;
+
+    @Override
+    public Optional<Notification> findById(Long id) {
+        return notificationJPARepository.findById(id);
+    }
+
+    @Override
+    public Notification save(Notification notification) {
+        return notificationJPARepository.save(notification);
+    }
+
+    @Override
+    public List<Notification> saveAll(List<Notification> notifications) {
+        return notificationJPARepository.saveAll(notifications);
+    }
 
     @Override
     public List<Notification> getAllNotifications(Long userId) {

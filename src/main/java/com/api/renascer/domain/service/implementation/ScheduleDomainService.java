@@ -1,9 +1,10 @@
-package com.api.renascer.application.web;
+package com.api.renascer.domain.service.implementation;
 
 import com.api.renascer.domain.dto.ScheduleDTO;
 import com.api.renascer.domain.model.Schedule;
-import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.api.renascer.domain.repository.ScheduleRepository;
+import com.api.renascer.domain.service.ScheduleService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
@@ -11,28 +12,27 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Service
-public class ScheduleService {
-    private final ScheduleRepository repository;
+@RequiredArgsConstructor
+public class ScheduleDomainService implements ScheduleService {
 
-    @Autowired
-    public ScheduleService(ScheduleRepository repository) {
-        this.repository = repository;
-    }
+    private final ScheduleRepository scheduleRepository;
 
-    @Transactional
+    @Override
     public List<Schedule> getAll() {
-        return repository.findAll();
+        return scheduleRepository.getAll();
     }
 
-    @Transactional
+    @Override
     public List<Schedule> getAllByValidDeadline() {
-        return repository.findAllByValidDeadline();
+        return scheduleRepository.getAllByValidDeadline();
     }
 
+    @Override
     public List<Schedule> getScheduleToNotify() {
-        return this.repository.findScheduleToNotify();
+        return scheduleRepository.getScheduleToNotify();
     }
 
+    @Override
     public List<ScheduleDTO> getByStartDate(String startDate) throws ParseException {
         if (startDate.length() < 10) {
             startDate = startDate + "-01";
@@ -42,7 +42,7 @@ public class ScheduleService {
         Date date = formatter.parse(startDate);
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
-        List<Schedule> scheduleList = repository.findByStartDate(date);
+        List<Schedule> scheduleList = scheduleRepository.findByStartDate(date);
 
         List<ScheduleDTO> scheduleDTOList = new ArrayList<>();
 
@@ -59,6 +59,7 @@ public class ScheduleService {
         return scheduleDTOList;
     }
 
+    @Override
     public List<Schedule> generateSchedule(String month, String year) throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
         String dateString = "01-" + month + "-" + year;
@@ -79,7 +80,12 @@ public class ScheduleService {
             }
         }
 
-        return repository.saveAll(scheduleList);
+        return scheduleRepository.saveAll(scheduleList);
+    }
+
+    @Override
+    public void readScheduleByIds(List<Long> ids) {
+        scheduleRepository.readScheduleByIds(ids);
     }
 
     private Schedule createSchedule(Date date) {
@@ -112,9 +118,5 @@ public class ScheduleService {
                 return new Schedule("Culto De Ensino", startDate.getTime(), endDate.getTime());
         }
         return null;
-    }
-
-    public void readScheduleByIds(List<Long> ids) {
-        this.repository.readScheduleByIds(ids);
     }
 }

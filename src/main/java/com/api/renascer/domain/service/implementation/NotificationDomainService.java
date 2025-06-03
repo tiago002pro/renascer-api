@@ -2,16 +2,17 @@ package com.api.renascer.domain.service.implementation;
 
 import com.api.renascer.domain.enums.NotificationTypes;
 import com.api.renascer.domain.exception.HttpResquestException;
+import com.api.renascer.domain.exception.NotFoundDatabaseException;
 import com.api.renascer.domain.model.Notification;
 import com.api.renascer.domain.model.User;
 import com.api.renascer.domain.model.Video;
 import com.api.renascer.domain.repository.NotificationRepository;
 import com.api.renascer.domain.service.NotificationService;
+import com.api.renascer.domain.service.ScheduleService;
+import com.api.renascer.domain.service.UserService;
 import com.api.renascer.domain.service.VideosService;
 import com.api.renascer.domain.dto.ExpoNotificationDTO;
 import com.api.renascer.domain.model.Schedule;
-import com.api.renascer.application.web.ScheduleService;
-import com.api.renascer.application.web.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.*;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -29,6 +30,21 @@ public class NotificationDomainService implements NotificationService {
     private final VideosService videosService;
     private final ScheduleService scheduleService;
     private final UserService userService;
+
+    private final String NOT_FOUND_MESSAGE = "Nenhum reultado encontrado";
+
+    private Notification getById(Long id) {
+        try {
+            Optional<Notification> notification = notificationRepository.findById(id);
+            if (notification.isPresent()) {
+                return notification.get();
+            } else {
+                throw new NotFoundDatabaseException(NOT_FOUND_MESSAGE, HttpStatus.NOT_FOUND);
+            }
+        } catch (HttpResquestException e) {
+            throw new HttpResquestException(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
 
     @Override
     public List<Notification> getAllNotifications(Long userId) {
@@ -70,9 +86,10 @@ public class NotificationDomainService implements NotificationService {
     }
 
     @Override
-    public void deleteAllNotifications(Long userId) {
+    public String deleteAllNotifications(Long userId) {
         try {
             notificationRepository.deleteAllByUser(userId);
+            return "Notificações deletadas com sucesso!";
         } catch (HttpResquestException e) {
             throw new HttpResquestException(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
@@ -135,7 +152,7 @@ public class NotificationDomainService implements NotificationService {
     @Scheduled(cron = "0 0 8 * * *")
     private void notifyNewVideos() {
         List<Video> videosToNotify = videosService.getVideosToNotify();
-        List<String> expoTokenUsers = userService.getAllExpoToken();
+        List<String> expoTokenUsers = userService.findAllExpoToken();
 
         if (Objects.nonNull(videosToNotify) && !videosToNotify.isEmpty()) {
             videosToNotify.forEach(video -> {
@@ -165,7 +182,7 @@ public class NotificationDomainService implements NotificationService {
     @Scheduled(cron = "0 0 9 * * *")
     private void notifyNewEvents() {
         List<Schedule> scheduleToNotify = scheduleService.getScheduleToNotify();
-        List<String> expoTokenUsers = userService.getAllExpoToken();
+        List<String> expoTokenUsers = userService.findAllExpoToken();
 
         if (Objects.nonNull(scheduleToNotify) && !scheduleToNotify.isEmpty()) {
             scheduleToNotify.forEach(schedule -> {
@@ -202,7 +219,7 @@ public class NotificationDomainService implements NotificationService {
     //    F: Dia da semana (0 - 6).
     @Scheduled(cron = "0 0 7 * * *")
     private void notifyBirthdays() {
-        List<User> birthdays = userService.getAllBirthdays();
+        List<User> birthdays = userService.findAllBirthdays();
         if (Objects.nonNull(birthdays) && !birthdays.isEmpty()) {
             List<Notification> notificationList = new ArrayList<>();
             birthdays.forEach(user -> {

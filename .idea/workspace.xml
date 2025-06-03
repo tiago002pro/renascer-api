@@ -4,92 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="Teste Cors">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/open/video/OpenVideoApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/open/video/OpenVideoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/person/PersonApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/person/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/video/VideoApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/video/VideoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/exception/ClientException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/exception/HttpResquestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/exception/NotFoundDatabaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/VideosRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/VideosService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/NotificationDomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/PersonDomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/VideosDomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/notification/NotificationJPARepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/notification/NotificationRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/person/PersonJPARepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/person/PersonRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/videos/VideoJPARepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/videos/VideoRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/dto/abibliadigital/BookResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/dto/abibliadigital/VersionsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/dto/abibliadigital/generic/Abbrev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/dto/abibliadigital/generic/Version.java" afterDir="false" />
+    <list default="true" id="f537aa9d-2059-4824-b94a-c84064d28f36" name="Changes" comment="git stash save">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/authentication/AuthenticationApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/authentication/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/notification/NotificationApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/notification/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/schedule/ScheduleApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/schedule/ScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/user/UserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/record/SignInRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/record/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/record/TokenLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/ScheduleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/ScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/AuthenticationDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/UserDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/schedule/ScheduleRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/user/UserJPARepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/user/UserRepositoryAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/JacksonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/abibliadigital/ABibliaDigitalApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/application2/web/abibliadigital/ABibliaDigitalApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/abibliadigital/ABibliaDigitalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/application2/web/abibliadigital/ABibliaDigitalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/email/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/email/EmailAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/email/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/email/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/SecurityConfigurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/SecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infra/security/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/TokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/api/abibliadigital/ABibliaDigitalApiAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/api/abibliadigital/ABibliaDigitalApiAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/api/abibliadigital/ABibliaDigitalApiPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/api/abibliadigital/ABibliaDigitalApiPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/api/abibliadigital/ABibliaDigitalServiceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/api/abibliadigital/ABibliaDigitalServiceAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/api/abibliadigital/ABibliaDigitalServicePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/api/abibliadigital/ABibliaDigitalServicePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/dto/abibliadigital/BookResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/dto/abibliadigital/VersionsResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/dto/abibliadigital/generic/Abbrev.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/dto/abibliadigital/generic/Version.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/http/HttpRequestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/old/infrastructure2/http/HttpRequestHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/api/NotificationAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/NotificationAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/helper/dto/ExpoNotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/ExpoNotificationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/helper/enums/NotificationTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/enums/NotificationTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/model/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/repository/NotificationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/notification/service/NotificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/api/PersonAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/enums/GenderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/enums/GenderType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/enums/MaritalStatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/enums/MaritalStatusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/repository/PersonRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/person/service/PersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/api/ScheduleAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/ScheduleAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/dto/ScheduleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/ScheduleDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/repository/ScheduleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/ScheduleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/schedule/service/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/ScheduleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/LoginResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/AutheticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/AutheticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/controller/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/AuthenticationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/AuthenticationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/ChangePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/ChangePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/RegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/dto/RegisterDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/domain/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/enums/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/AuthorizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/api/VideoAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/model/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/model/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/repository/VideoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/video/service/VideoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/scripts/videos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/AutheticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/AuthorizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/record/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/EmailAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/EmailDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/NotificationAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/ScheduleAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/ScheduleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/schedule/ScheduleJPARepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/ScheduleDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/repository/NotificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/NotificationDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/domain/service/implementation/NotificationDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/config/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/notification/NotificationRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/renascer/infrastructure/repository/notification/NotificationRepositoryAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,10 +55,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Record" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
         <option value="module-info" />
+        <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -142,6 +97,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Unnamed.executor&quot;: &quot;Debug&quot;,
     &quot;Maven.renascer [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.renascer [deploy].executor&quot;: &quot;Run&quot;,
@@ -166,7 +122,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Documents/renascer-api/src/main/java/com/api/renascer/application/web/public/video&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Documents/renascer-api/src/main/java/com/api/renascer/domain/record&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -182,6 +138,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\renascer-api\src\main\java\com\api\renascer\domain\record" />
       <recent name="C:\Users\Usuario\Documents\renascer-api\src\main\java\com\api\renascer\application\web\public\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -466,6 +423,11 @@
       <workItem from="1746419787976" duration="600000" />
       <workItem from="1747094330517" duration="604000" />
       <workItem from="1747352710004" duration="16704000" />
+      <workItem from="1747588108415" duration="5101000" />
+      <workItem from="1747616873455" duration="8940000" />
+      <workItem from="1747701524000" duration="5648000" />
+      <workItem from="1748657552131" duration="773000" />
+      <workItem from="1748908149957" duration="3631000" />
     </task>
     <task id="LOCAL-00001" summary="Teste Cors">
       <option name="closed" value="true" />
@@ -543,53 +505,9 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/NotificationAPI.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/NotificationAPI.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/AutheticationController.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/open/video/OpenVideoController.java</url>
           <line>18</line>
           <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/api/renascer/application/web/UserService.java</url>
-          <line>82</line>
-          <properties class="com.api.renascer.application.web.UserService" method="recoverPassword">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
